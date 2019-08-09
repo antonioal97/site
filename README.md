@@ -1,6 +1,8 @@
-**# Meu primeiro Site**
+#ESTE É O *MEU* SITE **PESSOAL**
+[Página de boas vindas](/home/antonioal97/Imagens/index_site.png)
 
-![](/home/antonioal97/Documentos/Portifolio/index_site.png)
+##Todo o código e processo de desenvolvimento do site está listado aqui neste repositório
+[Segue lá no insta @antonioal97](/home/antonioal97/Documentos/Portifolio/style/social_vector/antonioal97_nametag.png)
 ###(Abriu o link do site? É nesta página que vai cair)
 
 Este repositório foi criado para que **meu site** possa ser *desenvolvido* em *diversas maquinas*.
