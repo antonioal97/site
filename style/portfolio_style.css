@@ -6,8 +6,8 @@
 header  {
 margin: 0%;
 padding: 0%;
-box-shadow: 0px 2px 2px 0px;
-padding: 25px 0px 25px 25px;
+box-shadow: 0px 1.5px 1.5px 0px;
+padding: 15px 0px 15px 15px;
 border-radius: 0px 0px 10px 10px;
 }
 
@@ -27,7 +27,9 @@ text-align: center;
 padding: 25px 0px 0px 25px;
 }
 
-
+.responsive-table {
+    
+}
 
 .container {
 width: 75px;
@@ -38,9 +40,9 @@ padding: 25px 0px 25px 125px;
 
 
 .div_principal  {
-    background-image: url("/home/antonioal97/Documentos/Portifolio/style/body_background/backgrounddiv_princip.jpg");
+    background-image: url("/home/antonioal97/Documentos/Portifolio/style/body_background/bodybackg.png");
     image-resolution: 100px;
-    width: auto;
+    width: 400px;
     min-height: 200px;
 
 }
