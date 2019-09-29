@@ -5,6 +5,19 @@
 body{
 	background: #fffafa;
 }
+.botao_topo {
+	background-color: whitesmoke;
+	border-radius: 7px;
+	color: black;
+	width: 7%;
+	height: 50%;
+	box-shadow: 10px;
+	float: right;
+	margin: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: unset;
+
+}
 #header{
 	border-radius: 0px 0px 5px 5px;
 	margin: 0px 0px 10px 0px;
