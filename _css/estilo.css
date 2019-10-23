@@ -1,0 +1,43 @@
+/*EDIÇÃO DE TAGS BÁSICAS*/
+
+p{
+    text-indent: 50px;
+}
+/*A DIVISÃO AZUL QUE EXISTIRÁ NO INÍCIO DO SITE*/
+div#frente-site {
+    height: 600px;
+    width: auto;
+    background-color: burlywood;
+}
+
+/*TEXTO DE BOAS VINDAS*/
+hgroup#boas-vindas {
+    box-sizing: content-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    position: relative;
+    text-align: center;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+nav#menu {
+    width: auto;
+    height: 75px;
+    display:block;
+    background-color: rgb(124, 184, 236);
+    margin: -20px;
+}
+nav#menu ul{
+list-style: none;
+text-transform: uppercase;
+position: relative;
+top: 0px;
+float: right;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 0px;
+}
