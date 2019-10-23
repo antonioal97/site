@@ -1,5 +1,17 @@
-/*EDIÇÃO DE TAGS BÁSICAS*/
+﻿/*EDIÇÃO DE TAGS BÁSICAS*/
+* {
+margin: 0px;
+padding: 0px;
+}
+div.interface {
+    background-color: #e1f5fe;
+    margin: 0px auto 0px auto;
+    width: 600px;
 
+}
+body {
+background-color: #b3e5fc;
+}
 p{
     text-indent: 50px;
 }
@@ -7,7 +19,7 @@ p{
 div#frente-site {
     height: 600px;
     width: auto;
-    background-color: burlywood;
+    background-color: #64b5f6;
 }
 
 /*TEXTO DE BOAS VINDAS*/
@@ -25,7 +37,7 @@ nav#menu {
     width: auto;
     height: 75px;
     display:block;
-    background-color: rgb(124, 184, 236);
+    background-color: #42a5f5;
     margin: -20px;
 }
 nav#menu ul{
