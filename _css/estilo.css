@@ -4,32 +4,41 @@ margin: 0px;
 padding: 0px;
 }
 div.interface {
-    background-color: #e1f5fe;
+    background-color: #2b2b2b;
     margin: 0px auto 0px auto;
-    width: 600px;
-
+    width: 980px;
+    height: 640px;
 }
 body {
-background-color: #b3e5fc;
+background-color: #898989;
 }
 p{
     text-indent: 50px;
 }
 /*A DIVISÃO AZUL QUE EXISTIRÁ NO INÍCIO DO SITE*/
 div#frente-site {
-    height: 600px;
-    width: auto;
-    background-color: #64b5f6;
+    margin: 20px auto 20px auto;
+    height: auto;
+    width: 320px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 6px;
+    color: #f8f8f8;
+    
 }
 
 /*TEXTO DE BOAS VINDAS*/
 hgroup#boas-vindas {
     box-sizing: content-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: absolute;
-    top: 0px;
     position: relative;
+    top: 0px;
     text-align: center;
+}
+hgroup#boas-vindas h1 {
+    color: white;
+    font-size: 48px;
+    font-family: OpenSans;
+    src: url("_fontes/Open_Sans/OpenSans-Regular.ttf")
 }
 
 /*MENU DE NAVEGAÇÃO*/
@@ -37,8 +46,10 @@ nav#menu {
     width: auto;
     height: 75px;
     display:block;
-    background-color: #42a5f5;
-    margin: -20px;
+    position: relative;
+    background-color: #e8e8e8;
+
+    
 }
 nav#menu ul{
 list-style: none;
@@ -46,10 +57,12 @@ text-transform: uppercase;
 position: relative;
 top: 0px;
 float: right;
+margin: 20px;
 }
 nav#menu li{
     display: inline-block;
-    background-color: #dddddd;
+    background-color: #f8f8f8;
     padding: 10px;
-    margin: 0px;
-}
+    border-radius: 10px;
+    height: 10px;
+  }
