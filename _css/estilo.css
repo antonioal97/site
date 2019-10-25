@@ -48,7 +48,9 @@ nav#menu {
     height: 75px;
     display:block;
     position: relative;
-    background-color: #e8e8e8;  
+    background-color: #e8e8e8;
+    border-bottom: 1px red solid;
+
 }
 nav#menu ul{
 list-style: none;
