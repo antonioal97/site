@@ -1,48 +1,26 @@
 ﻿/*EDIÇÃO DE TAGS BÁSICAS*/
-* {
-margin: 0px;
-padding: 0px;
-}
-div.interface {
-    background-color: #2b2b2b;
-    box-shadow: 1px 1px 6px #000000;
-    margin: 0px auto 0px auto;
-    width: 980px;
-    height: 640px;
-}
+*{margin: 0px;padding: 0px;}
 body {
 background-color: #898989;
 }
 p{
     text-indent: 50px;
 }
-/*A DIVISÃO AZUL QUE EXISTIRÁ NO INÍCIO DO SITE*/
-div#frente-site {
-    margin: 20px auto 20px auto;
-    height: auto;
-    width: 320px;
-    box-shadow: 1px 1px 8px black;
-    border-radius: 6px;
-    color: #f8f8f8;
-    
+/*INTERFACE DO SITE (DIV)*/
+div.interface {
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#181818;
+    background-size: 13px 13px;
+    box-shadow: 1px 1px 6px #000000;
+    margin: 0px auto 0px auto;
+    width: 980px;
+    height: 640px;
 }
-
-/*TEXTO DE BOAS VINDAS*/
-hgroup#boas-vindas {
-    box-sizing: content-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
-    top: 0px;
-    text-align: center;
-}
-hgroup#boas-vindas h1 {
-    color: white;
-    font-size: 48px;
-    font-family: OpenSans;
-    src: url("_fontes/Open_Sans/OpenSans-Regular.ttf")
-}
-
-/*MENU DE NAVEGAÇÃO*/
+/*MENU DA PÁGINA*/
 nav#menu {
     width: auto;
     height: 75px;
@@ -53,7 +31,6 @@ nav#menu {
 nav#menu ul{
 list-style: none;
 text-transform: uppercase;
-position: relative;
 top: 0px;
 float: right;
 margin: 20px;
@@ -69,4 +46,41 @@ nav#menu li:hover {
     background-color: white;
     color: red;
     box-shadow: 1 1 4px white;
+}
+
+/*TEXTO DE BOAS VINDAS*/
+hgroup#boas-vindas {
+    background-color: black;
+    margin: 20px auto 20px auto;
+    height: auto;
+    width: 320px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 6px;
+    color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+hgroup#boas-vindas h1 {
+    color: white;
+    font-size: 48px;
+    font-family: OpenSans;
+    src: url("_fontes/Open_Sans/OpenSans-Regular.ttf")
+}
+
+/*DIV CAIXAS DE TEXTO*/
+div.box-text, .box-text1, .box-text2 {
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 6px;
+    position: relative;
+    left: 40px;
+    top: 50px;
+    margin: 25px;
 }
