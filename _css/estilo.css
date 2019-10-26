@@ -2,6 +2,7 @@
 *{margin: 0px;padding: 0px;}
 body {
 background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+height: 400px;
 }
 p{
     text-indent: 50px;
@@ -18,7 +19,7 @@ div.interface {
     box-shadow: 1px 1px 6px #000000;
     margin: 0px auto 0px auto;
     width: 980px;
-    height: 640px;
+    min-height: 640px;
 }
 
 
@@ -59,7 +60,7 @@ div.column {
     padding: 0 10px;
     position: relative;
     left: 340px;
-    top: 90px;
+    top: 100px;
 }
 /* Remove o espaçamento extra entre as linhas */
 div.row {margin: 0 -5px;}
