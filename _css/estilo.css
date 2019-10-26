@@ -1,7 +1,7 @@
 ﻿/*EDIÇÃO DE TAGS BÁSICAS*/
 *{margin: 0px;padding: 0px;}
 body {
-background-color: #898989;
+background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 p{
     text-indent: 50px;
@@ -9,24 +9,28 @@ p{
 /*INTERFACE DO SITE (DIV)*/
 div.interface {
     background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#181818;
-    background-size: 13px 13px;
+    radial-gradient(black 7.5%, transparent 4%) 0 0,
+    radial-gradient(black 7.5%, transparent 4%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 7.5%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 7.5%, transparent 20%) 8px 9px;
+    background-color:#eee;
+    background-size: 4px 4px;
     box-shadow: 1px 1px 6px #000000;
     margin: 0px auto 0px auto;
     width: 980px;
     height: 640px;
 }
+
+
+/*BOTOES*/
+
 /*MENU DA PÁGINA*/
 nav#menu {
     width: auto;
     height: 75px;
     display:block;
     position: relative;
-    background-color: #e8e8e8;  
+background-color: white;
 }
 nav#menu ul{
 list-style: none;
@@ -48,9 +52,37 @@ nav#menu li:hover {
     box-shadow: 1 1 4px white;
 }
 
-/*TEXTO DE BOAS VINDAS*/
+/* Colocando as colunas lado a lado */
+div.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    position: relative;
+    left: 340px;
+    top: 90px;
+}
+/* Remove o espaçamento extra entre as linhas */
+div.row {margin: 0 -5px;}
+/* Limpa os espaços estre as linhas*/
+div.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Estilo dos cartões */
+div.card{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #ffffffce;
+border-radius: 5px;
+height: 200px;
+}
+
+
+/*TEXTO DE BOAS VINDAS
 hgroup#boas-vindas {
-    background-color: black;
+    background: #000000;
     margin: 20px auto 20px auto;
     height: auto;
     width: 320px;
@@ -68,19 +100,4 @@ hgroup#boas-vindas h1 {
     font-family: OpenSans;
     src: url("_fontes/Open_Sans/OpenSans-Regular.ttf")
 }
-
-/*DIV CAIXAS DE TEXTO*/
-div.box-text, .box-text1, .box-text2 {
-    display: inline-block;
-    height: 200px;
-    width: 250px;
-    background-color: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    box-shadow: 1px 1px 4px grey;
-    border-radius: 6px;
-    position: relative;
-    left: 40px;
-    top: 50px;
-    margin: 25px;
-}
+*/
