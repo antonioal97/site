@@ -1,117 +1,35 @@
-﻿/*EDIÇÃO DE TAGS BÁSICAS*/
-body {
-background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-height: 400px;
-}
-p{
-    text-indent: 50px;
-}
-/*INTERFACE DO SITE (DIV)*/
-div.interface {
-<<<<<<< HEAD
-    /*background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#181818;
-    background-size: 13px 13px;*/
-=======
-    background:
-    radial-gradient(black 7.5%, transparent 4%) 0 0,
-    radial-gradient(black 7.5%, transparent 4%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 7.5%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 7.5%, transparent 20%) 8px 9px;
-    background-color:#eee;
-    background-size: 4px 4px;
->>>>>>> 07c22b620f95ad8830ca87c236db4983ec3a4a17
-    box-shadow: 1px 1px 6px #000000;
-    margin: 0px auto 0px auto;
-    width: 980px;
-    min-height: 640px;
-}
+﻿/*PÁGINA DE ESTILO CSS*/
+@charset UTF-8;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap');
 
-
-/*BOTOES*/
-
-/*MENU DA PÁGINA*/
+/*INÍCIO DA EDIÇÃO DO HEADER*/
+/*MENU*/
 nav#menu {
-    width: auto;
-    height: 75px;
-    display:block;
-    position: relative;
-<<<<<<< HEAD
-    background-color: #e8e8e8;
-=======
-background-color: white;
->>>>>>> 07c22b620f95ad8830ca87c236db4983ec3a4a17
+    display: block; 
+
 }
-nav#menu ul{
-list-style: none;
-text-transform: uppercase;
-top: 0px;
-float: right;
-margin: 20px;
+nav#menu ul {
+    list-style: none;
+    position: absolute; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    padding: 0 0 10px 0;
+    margin: 0 300px 10px 200px;
+    left: 200px;
+    width: 540px;
+    background-color: #efefef;
 }
-nav#menu li{
+nav#menu li {
+    border-bottom: 1px solid black;
     display: inline-block;
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 6px rgba(121, 121, 121, 0.1);
+    width: 80px;
     height: 10px;
-  }
-nav#menu li:hover {
-    background-color: white;
-    color: red;
-    box-shadow: 1 1 4px white;
-}
-
-/* Colocando as colunas lado a lado */
-div.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    position: relative;
-    left: 340px;
-    top: 100px;
-}
-/* Remove o espaçamento extra entre as linhas */
-div.row {margin: 0 -5px;}
-/* Limpa os espaços estre as linhas*/
-div.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-/* Estilo dos cartões */
-div.card{
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-padding: 16px;
-text-align: center;
-background-color: #ffffffce;
-border-radius: 5px;
-height: 200px;
-}
-
-
-/*TEXTO DE BOAS VINDAS
-hgroup#boas-vindas {
-    background: #000000;
-    margin: 20px auto 20px auto;
-    height: auto;
-    width: 500px;
-    box-shadow: 1px 1px 8px black;
-    border-radius: 6px;
-    color: #f8f8f8;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: 50px;
+    /*FONTE DO MENU*/
+    font-size: 20px;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-hgroup#boas-vindas h1 {
-    color: white;
-    font-size: 48px;
-    font-family: OpenSans;
-    src: url("_fontes/Open_Sans/OpenSans-Regular.ttf")
-}
-*/
