@@ -4,32 +4,46 @@
 
 /*INÍCIO DA EDIÇÃO DO HEADER*/
 /*MENU*/
+header#cabecalho {
+    padding: 0px;
+    height: 30px;
+
+}
 nav#menu {
     display: block; 
-
+    position: relative;
 }
 nav#menu ul {
     list-style: none;
-    position: absolute; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
     padding: 0 0 10px 0;
-    margin: 0 300px 10px 200px;
-    left: 200px;
     width: 540px;
-    background-color: #efefef;
+    margin: 0 auto 0 auto;
 }
 nav#menu li {
-    border-bottom: 1px solid black;
-    display: inline-block;
-    border: 1px solid #eeeeee;
+    display: inline-table;
     padding: 15px;
     border-radius: 25px;
-    box-shadow: 1px 1px 6px rgba(121, 121, 121, 0.1);
+    box-shadow: 0px 0px 6px rgba(104, 103, 103, 0.452);
     width: 80px;
-    height: 10px;
     /*FONTE DO MENU*/
     font-size: 20px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
+/*FIM DA EDIÇÃO DO MENU*/
+/*----------------------------------------------------------------------*/
+/*EDIÇÃO DA INTERFACE*/
+body {
+    background-color: #eeeeee;
+}
+div.interface {
+    background-color: rgb(255, 255, 255);
+    width: 980px;
+    height: 640px;
+    margin: 100px auto 100px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(121, 121, 121, 0.5);
+}
+/*FIM DA EDIÇÃO DA INTERFACE*/
+/*----------------------------------------------------------------------*/
