@@ -1,3 +1,59 @@
+<<<<<<< HEAD
 ﻿/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 font-family: 'Josefin Sans', sans-serif;*/
+=======
+﻿/*PÁGINA DE ESTILO CSS*/
+@charset UTF-8;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap');
+
+/*INÍCIO DA EDIÇÃO DO HEADER*/
+/*MENU*/
+header#cabecalho {
+    padding: 0px;
+    height: 30px;
+
+}
+nav#menu {
+    display: block; 
+    position: absolute;
+    top: 15px;
+    left: 500px;
+    
+}
+nav#menu ul {
+    list-style: none;
+    padding: 0 0 10px 0;
+    width: 540px;
+    margin: 0 auto 0 auto;
+}
+nav#menu li {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px rgba(104, 103, 103, 0.452);
+    width: 80px;
+    /*FONTE DO MENU*/
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+/*FIM DA EDIÇÃO DO MENU*/
+/*----------------------------------------------------------------------*/
+/*EDIÇÃO DA INTERFACE*/
+body {
+    background-color: #eeeeee;
+}
+div.interface {
+    background-color: rgb(255, 255, 255);
+    width: 980px;
+    height: 640px;
+    margin: 100px auto 100px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(121, 121, 121, 0.5);
+}
+/*FIM DA EDIÇÃO DA INTERFACE*/
+/*----------------------------------------------------------------------*/
+>>>>>>> 4c6ea8c57af2c8bd32fdedee1b8577bb8b71ec45
