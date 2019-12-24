@@ -10,20 +10,15 @@
 </head>
 <body>
     <header>
-        <nav>
-            <input id="menu-hamburguer" type="checkbox">
-            <label for="menu-hamburguer">
-                <ul>
-                    <span class="hamburguer"></span>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </label>
+        <nav id="menu-navegacao">
+            <ul>
+                <a href="#home"><li>Início</li></a>
+                <a href="#sobre"><li>Sobre</li></a>
+                <a href="#contato"><li>Contato</li></a>
+                <!--<a href="#"><li></li></a>-->
+            </ul>
             <div class="midias-sociais">
                 <ul id="midias-sociais">
-                    <i>Mídias Sociais</i>
                     <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
                     <li><a href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener"><i class="fa fa-linkedin"></i></a></li>
@@ -33,6 +28,31 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section id="home">
+            <hgroup>
+                <h1>Nesta "section"</h1>
+                <h3>Fica a home do site, a página inicial</h3>
+            </hgroup>
+        </br>
+        </section>
+        <section id="sobre">
+            <hgroup>
+                <h1>Nesta section</h1>
+                <h3>Fica a página "sobre", onde vai conter o meu curriculo</h3>
+                <h5>Aqui, será necessário um card, com uma breve apresentação minha</h5>
+                <h6>...</h6>
+            </hgroup>
+        </br>
+        </section>
+        <section id="contato">
+            <hgroup>
+                <h1>Nesta section, ficaram meus dados para contato</h1>
+                <h3>E uma area para envio de e-mails</h3>
+            </hgroup>
+        </br>
+        </section>
+    </main>
     <script>
         var usuario = {
             nome: 'Antônio',
