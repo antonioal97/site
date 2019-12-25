@@ -1,5 +1,89 @@
-﻿body
-     {
-        background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
-        background-size: 4px 4px;
-    }
+﻿﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div.container {
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+    background-color: none;
+
+}
+body {
+background-image: -webkit-linear-gradient(-90deg,    transparent 0%,    transparent 50%, white 50%, white 100%),
+                  -webkit-linear-gradient(  0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 50%, white 50%, white 100%);
+background-size:.19em .19em;
+}
+/*---------------------------------------------------------*/
+
+div.menu-navegacao{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom: #2323236e solid 0.5px;
+    box-shadow: 9px -9px 10px #000;
+}
+nav#menu-navegacao {
+    position: relative;
+}
+#menu-navegacao li {
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    display: inline-flex;
+    color: black;
+    padding: 10px; 
+    text-shadow: 0 2px 0 0px hsl(0, 0%, 0%),
+             0 3px 2px 0px hsla(0, 0%, 0%, 0.5);   
+}
+li#enfase {
+    box-shadow:
+    0px 1px #53a7ea,
+    0px 2px #53a7ea,
+    0px 3px #53a7ea;
+}
+#menu-navegacao a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*Estilização da caixa onde ficam os links para redes sociais.
+Aqui por enquanto nada novo, Aprenas importei os icones (no Fontawesome) defini em
+div.midias-socias as posições deles, cores e tamanhos.
+Adicionei um :hover para fazer o ícone aumentar quando o mouse passar por cima, e adicionei uma sombra azul junto.
+No ID #midias-socias li eu defini o display das linhas e o espaçamento entre elas. */
+div.midias-sociais {
+    top: 20px;
+    position: absolute;
+    margin: -20px 200px auto 550px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+ul#midias-sociais {
+    position: relative;
+}
+div.midias-sociais a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #2323237a;
+}
+div.midias-sociais a :hover {
+    box-shadow:
+    0px 1px #53a7ea,
+    0px 2px #53a7ea,
+    0px 3px #53a7ea;
+    /*-webkit-transform: translateX(-3px);
+    transform: translateX(-3px);*/
+    font-size: 25px;
+    color: #232323;
+    
+}
+#midias-sociais li {
+    display: inline-block;
+    padding: 7px;
+}
+/*Fim da estilização da barra de midias sociais*/

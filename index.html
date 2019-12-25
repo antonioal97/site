@@ -4,30 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="_css/menu.css">
-    <link rel="stylesheet" href="_css/template.css">
     <title>@antonioal97</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"> <!--CSS da página-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--Pacote de icones em fontes-->
 </head>
 <body>
     <header>
-        <input type="checkbox" id="btn-menu">           <!--Cria uma chekbox-->
-        <label for="btn-menu">&#9776</label>            <!--Cria um hamburger que quando clicado, aciona a checkbox-->
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
+        <div class="menu-navegacao">
+            <nav id="menu-navegacao">
+                <ul>
+                    <a href="#home"><li>Início</li></a>
+                    <a href="#sobre"><li>Sobre</li></a>
+                    <a href="#contato"><li id="enfase">Contato</li></a>
+                    <!--<a href="#"><li></li></a>-->
+                </ul>
+            </nav>
+        </div>
+            <div class="midias-sociais">
+                <ul id="midias-sociais">
+                    <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/antonioal97" target="_blank" rel="rel=noopener"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
     </header>
-
-    <section class="container-section"></section>
-    <section class="container-section"></section>
-    <section class="container-section"></section>
-
-    <footer>
-        <a href="card-informativo.html">
-    </footer>
+    <div class="container">
+        <main>
+            <section id="home">
+                <hgroup>
+                    <h1>Nesta "section"</h1>
+                    <h3>Fica a home do site, a página inicial</h3>
+                </hgroup>
+            </br>
+            </section>
+            <section id="sobre">
+                <hgroup>
+                    <h1>Nesta section</h1>
+                    <h3>Fica a página "sobre", onde vai conter o meu curriculo</h3>
+                    <h5>Aqui, será necessário um card, com uma breve apresentação minha</h5>
+                    <h6>...</h6>
+                </hgroup>
+            </br>
+            </section>
+            <section id="contato">
+                <hgroup>
+                    <h1>Nesta section, ficaram meus dados para contato</h1>
+                    <h3>E uma area para envio de e-mails</h3>
+                </hgroup>
+            </br>
+            </section>
+            <footer>
+                <h1>Este é o footer do site <br><h5>Antônio Alberto &copy   </h5>;</h1>
+            </footer>
+        </main>
+    </div>
+    <script>
+        var usuario = {
+            nome: 'Antônio',
+            idade: 22,
+            sexo: 'M',
+            human: true,
+            working: true,
+            locate: 'Jacupiranga-SP'
+        };
+        console.log(usuario);
+    </script>
 </body>
 </html>
