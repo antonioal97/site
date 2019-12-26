@@ -7,8 +7,6 @@ div.container {
     position: relative;
     margin: 0 auto;
     width: 980px;
-    background-color: none;
-
 }
 body {
 background-image: -webkit-linear-gradient(-90deg,    transparent 0%,    transparent 50%, white 50%, white 100%),
@@ -21,26 +19,32 @@ div.menu-navegacao{
     position: absolute;
     width: 100%;
     top: 0;
+    left: 0;
     border-bottom: #2323236e solid 0.5px;
     box-shadow: 9px -9px 10px #000;
+    background-color: white;
 }
 nav#menu-navegacao {
     position: relative;
 }
+#menu-navegacao ul {
+    text-align: right;
+}
 #menu-navegacao li {
+    list-style: none;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: larger;
-    display: inline-flex;
     color: black;
-    padding: 10px; 
+    padding-right: 15px; 
     text-shadow: 0 2px 0 0px hsl(0, 0%, 0%),
              0 3px 2px 0px hsla(0, 0%, 0%, 0.5);   
 }
 li#enfase {
-    box-shadow:
+    box-shadow: 
     0px 1px #53a7ea,
     0px 2px #53a7ea,
-    0px 3px #53a7ea;
+    0px 3px #53a7ea;    
 }
 #menu-navegacao a {
     text-decoration: none;
@@ -57,14 +61,15 @@ div.midias-socias as posições deles, cores e tamanhos.
 Adicionei um :hover para fazer o ícone aumentar quando o mouse passar por cima, e adicionei uma sombra azul junto.
 No ID #midias-socias li eu defini o display das linhas e o espaçamento entre elas. */
 div.midias-sociais {
-    top: 20px;
+    top: 0;
     position: absolute;
-    margin: -20px 200px auto 550px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
+    width: 25%;
 }
 ul#midias-sociais {
     position: relative;
+    text-align: center;
 }
 div.midias-sociais a {
     text-decoration: none;
@@ -87,3 +92,11 @@ div.midias-sociais a :hover {
     padding: 7px;
 }
 /*Fim da estilização da barra de midias sociais*/
+
+
+#home, #contato, #sobre {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 100%;
+}
