@@ -4,85 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@antonioal97</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css"> <!--CSS da página-->
+    <title>Prototipo</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--Pacote de icones em fontes-->
 </head>
 <body>
-    <header>
-        <div class="menu-navegacao">
-            <nav id="menu-navegacao">
-                <ul>
-                    <a href="#home"><li>Início</li></a>
-                    <a href="#sobre"><li>Sobre</li></a>
-                    <a href="#contato"><li id="enfase">Contato</li></a>
-                    <!--<a href="#"><li></li></a>-->
-                </ul>
-            </nav>
-        </div>
-            <div class="midias-sociais">
-                <ul id="midias-sociais">
-                    <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/antonioal97" target="_blank" rel="rel=noopener"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
+    <header id="cabecalho"> <!--Elemento pai que vai controlar os subsequentes-->
+        <nav>
+            <ul>
+                <a href="#inicio"><li>Início</li></a>
+                <a href="#contato"><li>Contato</li></a>
+                <a href="#sobre"><li>Sobre Mim</li></a>
+                <a href="#portfolio"><li>Portfólio</li></a>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <div>
-            <div class="container">
-                <section id="home">
-                        <hgroup>
-                            <h1>Nesta "section"</h1>
-                            <h3>Fica a home do site, a página inicial</h3>
-                        </hgroup>
-                </br>
-                </section>
-            </div>
-            
-            <div class="container">
-                <section id="sobre">
-                    <hgroup>
-                        <h1>Nesta section</h1>
-                        <h3>Fica a página "sobre", onde vai conter o meu curriculo</h3>
-                        <h5>Aqui, será necessário um card, com uma breve apresentação minha</h5>
-                        <h6>...</h6>
-                    </hgroup>
-                </br>
-                </section>
-            </div>
-            
-            <div class="container">
-                <section id="contato">
-                    <hgroup>
-                        <h1>Nesta section, ficaram meus dados para contato</h1>
-                        <h3>E uma area para envio de e-mails</h3>
-                    </hgroup>
-                </br>
-                </section>
-            </div>
+    <div class="container"> <!--Contem a formatação principal-->
+        <div class="theme"> <!--Contem uma leve estilização (apenas cor e futuramente um backgroud com paralax)-->
+            <main>
+                <div class="conteudo-lateral">
+                    <aside>
+                        <div class="card-box">
+                            <section>
+                                <figure>
+                                    <img src="" alt="minha-foto">
+                                    <figcaption>
+                                        Esta é a foto do meu curriculo virtual
+                                    </figcaption>
+                                </figure>
+                                <article>
+                                    <h4>Antônio Alberto</h4>
+                                    <h5>Técnico em Instrumentação Industrial [ETEC]</h5>
+                                    <br>
+                                    <h5>Estudante de Análise e Desenvolvimento de Sistemas pela UNIVR</h5>
+                                </article>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <div class="midias-sociais"> <!--Retangulo de agrupamento dos links de mídias sociais-->
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
+                                        <li><a href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/antonioal97" target="_blank" rel="rel=noopener"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </div>
+                <div class="wrapper"> <!--Simplismente para organizar/padronizar o conteudo de uma section dentro do site-->
+                    <section id="inicio">
+                        <h1>Bem vindo, este é o Início do site</h1>
+                        <h3>What is Lorem Ipsum?</h3>
+                        <article>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </article>
+                    </section>
+                </div> <!--Fim da classe wrapper-->
+                <br/>
+                <div class="wrapper">
+                    <section id="contato">
+                        <article>
+                            <h3>Where does it come from?</h3>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-            <div class="container">
-                <footer class="rodape">
-                    <h1>Este é o footer do site</h1>
-                        <br>
-                    <h5>Antônio Alberto &copy</h5>
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                        </article>
+                    </section>
+                </div>
+                <br/>
+                <div class="wrapper">
+                    <section id="sobre">
+                        <article>
+                            <h3>Why do we use it?</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </article>
+                    </section>
+                </div>
+                <br/>
+                <div class="wrapper">
+                    <section id="portfolio">
+                        <article>
+                            <h3>Where can I get some?</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                        </article>
+                    </section>
+                </div>
+                <br/>
+                <footer>
+                    <div class="wrapper">
+                        <div class="card-box">
+                            <section>
+                                <article>
+                                    <h4>Meu nome?</h4>
+                                    <h1>Antônio Alberto</h1>
+                                    <h3>E eu sou um programador!</h3>
+                                    <h6>Since 2019</h6><p>&copy;</p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
                 </footer>
-            </div>
-        </main>
+            </main>
+        </div> <!--Fim da classe "theme"-->
     </div>
-    <script>
-        var usuario = {
-            nome: 'Antônio',
-            idade: 22,
-            sexo: 'M',
-            human: true,
-            working: true,
-            locate: 'Jacupiranga-SP'
-        };
-        console.log(usuario);
-    </script>
 </body>
 </html>

@@ -1,117 +1,93 @@
-﻿﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
 * {
     margin: 0px;
     padding: 0px;
 }
-div.container {
-    position: relative;
-    margin: 0 auto;
-    width: 980px;
-}
 body {
-background-image: -webkit-linear-gradient(-90deg,    transparent 0%,    transparent 50%, white 50%, white 100%),
-                  -webkit-linear-gradient(  0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 50%, white 50%, white 100%);
-background-size:.19em .19em;
+    /*
+background-color: #121212;
+*/
+background-color: #eee;
 }
-/*---------------------------------------------------------*/
-
-div.menu-navegacao{
+div.container {
+    background-color: #26282b;
     position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-bottom: #2323236e solid 0.5px;
-    box-shadow: 9px -9px 10px #000;
-    background-color: white;
+    top: 100px;
+    display: flex;
 }
-nav#menu-navegacao {
+div.theme{
     position: relative;
+    background-color: #e2e2e2;    
 }
-#menu-navegacao ul {
-    text-align: right;
+div.wrapper{
+    background-color: #eeeeee;
+    position: relative;
+    width: 700px;
+    min-height: 300px;
+    margin: 0px auto 0px 350px;
+    padding-top: 20px;
+    border-top: 0.5px solid rgba(95, 95, 95, 0.5);
 }
-#menu-navegacao li {
+div.wrapper p{
+    font-size: 16px;font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+div.wrapper section{
+    margin: 0 auto;
+    width: 600px ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.400);
+    transition: all 0.2s ease-in-out;
+}
+div.wrapper section:hover{
+    border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+/*Edição do header*/
+header#cabecalho{
+    text-align: center;
+    background-color: #000;
+}
+header#cabecalho li{
     list-style: none;
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: larger;
-    color: black;
-    padding-right: 15px; 
-    text-shadow: 0 2px 0 0px hsl(0, 0%, 0%),
-             0 3px 2px 0px hsla(0, 0%, 0%, 0.5);   
+    padding: 20px;
 }
-li#enfase {
-    box-shadow: 
-    0px 1px #53a7ea,
-    0px 2px #53a7ea,
-    0px 3px #53a7ea;    
-}
-#menu-navegacao a {
+header#cabecalho a{
     text-decoration: none;
+    display: inline-block;
+    color: white;
 }
+/*Fim da edição do header*/
 
-
-
-
-
-
-/*Estilização da caixa onde ficam os links para redes sociais.
-Aqui por enquanto nada novo, Aprenas importei os icones (no Fontawesome) defini em
-div.midias-socias as posições deles, cores e tamanhos.
-Adicionei um :hover para fazer o ícone aumentar quando o mouse passar por cima, e adicionei uma sombra azul junto.
-No ID #midias-socias li eu defini o display das linhas e o espaçamento entre elas. */
-div.midias-sociais {
-    top: 0;
-    position: absolute;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.5);
-    width: 25%;
+/*Edição do conteudo lateral*/
+div.card-box{
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background-color: #303030;
+    color: white;
+    text-shadow: 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 50px;
 }
-ul#midias-sociais {
-    position: relative;
-    text-align: left;
+div.card-box figure{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px rgba(99, 99, 99, 0.4);
+}
+div.card-box figcaption{
+    display: none;
+}
+/*Fim da edição do conteudo lateral*/
+
+div.midias-sociais li{
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
 }
 div.midias-sociais a {
-    text-decoration: none;
-    color: #2323237a;
+    color: white;
 }
-div.midias-sociais a :hover {
-    box-shadow:
-    0px 1px #53a7ea,
-    0px 2px #53a7ea,
-    0px 3px #53a7ea;
-    /*-webkit-transform: translateX(-3px);
-    transform: translateX(-3px);*/
-    font-size: 25px;
-    color: #232323;
-    
-}
-#midias-sociais li {
-    display: inline-block;
-    padding: 7px;
-}
-/*Fim da estilização da barra de midias sociais*/
 
-
-#home, #contato, #sobre, #rodape {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    height: 440px;
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.5),
-    1px 4px 7px rgba(0, 0, 0, 0.5);  
-    border-radius: 10px;
-}
-#home {
-    background-color: #000;
-    color: whitesmoke;
-}
-#contato {
-    background-color: #800000;
-}
-#sobre {
-    background-color: #2037e6;
-}
-#rodape {
-    background-color: #232323;
-}
