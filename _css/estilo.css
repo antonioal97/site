@@ -48,6 +48,8 @@ div.wrapper{
     min-height: 18.75em;
     margin: 0em auto 0em 21.875em;
     padding-top: 1.25em;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
 
 }
 div.wrapper p{
