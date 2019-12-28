@@ -44,7 +44,6 @@ div.bk_theme{
                 2px 0.75px 40px rgba(0, 0, 0, 0.4);
 }
 div.wrapper{
-
     width: 46.25em;
     min-height: 18.75em;
     margin: 0em auto 0em 21.875em;
@@ -57,8 +56,10 @@ div.wrapper p{
 }
 div.wrapper h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
+    color: aliceblue;
 }
 div.wrapper section{
+    filter: opacity(0%);
     top: 2em;
     border-top: .2em solid rgba(95, 95, 95, 0.5);
     box-sizing: border-box;
@@ -68,6 +69,7 @@ div.wrapper section{
     transition: all 0.6s ease-in-out;
 }
 div.wrapper section:hover{
+    filter: opacity(100%);
     background-color: #212121;
     color: white;
     border-top: .005em solid rgba(95, 95, 95, 0.5);
