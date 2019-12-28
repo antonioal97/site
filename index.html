@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--Pacote de icones em fontes-->
 </head>
 <body>
-    <header id="cabecalho"> <!--Elemento pai que vai controlar os subsequentes-->
-        <nav>
-            <ul>
-                <a href="#inicio"><li>Início</li></a>
-                <a href="#contato"><li>Contato</li></a>
-                <a href="#sobre"><li>Sobre Mim</li></a>
-                <a href="#portfolio"><li>Portfólio</li></a>
-            </ul>
-        </nav>
-    </header>
+        <header id="cabecalho"> <!--Elemento pai que vai controlar os subsequentes-->
+                <nav>
+                    <ul>
+                        <a href="#inicio"><li>Início</li></a>
+                        <a href="#contato"><li>Contato</li></a>
+                        <a href="#sobre"><li>Sobre Mim</li></a>
+                        <a href="#portfolio"><li>Portfólio</li></a>
+                    </ul>
+                </nav>
+        </header>
     <div class="container"> <!--Contem a formatação principal-->
-        <div class="theme"> <!--Contem uma leve estilização (apenas cor e futuramente um backgroud com paralax)-->
+        <div class="theme"></div> <!--Apenas estilização--> <!--Precisa colocar ele fora do container-->
+        <div class="bk_theme"></div> <!--Apenas estilização--> <!--Precisa colocar ele fora do container-->
             <main>
                 <div class="conteudo-lateral">
                     <aside>
                         <div class="card-box">
                             <section>
+                                <br/>
+                                <br/>
                                 <figure>
                                     <img src="" alt="minha-foto">
                                     <figcaption>
@@ -33,6 +36,8 @@
                                     </figcaption>
                                 </figure>
                                 <article>
+                                    <br/>
+                                    <br/>
                                     <hgroup>
                                         <h4>Antônio Alberto</h4>
                                         <h5>Técnico em Instrumentação Industrial [ETEC]</h5>
@@ -53,10 +58,12 @@
                                         <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
+                                
                             </section>
                         </div>
                     </aside>
                 </div>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
                 <div class="wrapper"> <!--Simplismente para organizar/padronizar o conteudo de uma section dentro do site-->
                     <section id="inicio">
                         <h1>Bem vindo, este é o Início do site</h1>
@@ -65,8 +72,9 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </article>
                     </section>
-                </div> <!--Fim da classe wrapper-->
+                </div>
                 <br/>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
                 <div class="wrapper">
                     <section id="contato">
                         <article>
@@ -78,6 +86,7 @@
                     </section>
                 </div>
                 <br/>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
                 <div class="wrapper">
                     <section id="sobre">
                         <article>
@@ -87,6 +96,7 @@
                     </section>
                 </div>
                 <br/>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
                 <div class="wrapper">
                     <section id="portfolio">
                         <article>
@@ -96,22 +106,18 @@
                     </section>
                 </div>
                 <br/>
+                <!--//////////////////////////////////////////////////////////////////////////////-->
                 <footer>
-                    <div class="wrapper">
-                        <div class="card-box">
                             <section>
                                 <article>
                                     <h4>Meu nome?</h4>
                                     <h1>Antônio Alberto</h1>
                                     <h3>E eu sou um programador!</h3>
-                                    <h6>Since 2019</h6><p>&copy;</p>
+                                    <h6>Since 2019 &copy;</h6>
                                 </article>
-                            </section>
-                        </div>
-                    </div>
+                            </section>             
                 </footer>
             </main>
-        </div> <!--Fim da classe "theme"-->
     </div>
 </body>
 </html>
