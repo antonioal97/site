@@ -1,143 +1,140 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap'); /*Fontes usadas no site*/
+/*Inicio da formatação de reset da página
+Aqui inicialmente foi zerada as propriedades de margem interna e externa do documento, e dito que o conteúdo não ultrapassasra as "bordas da tela"*/
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:  border-box;
+        -mox-box-sizing: border-box;
+             box-sizing: border-box;
 }
-body{
-    background-color: #212121;
-}
+/*Fim da formatação de reset da página*/
+
+/* 1. Edição do conteiner que irá englobar e ser o elemento "pai" do site, ele irá referenciar os outros elementos*/
 div.container {
-    display: flex;
-    background: rgb(66,66,66);
-    background: linear-gradient(90deg, rgba(66,66,66,1) 0%, rgba(48,48,48,1) 35%, rgba(33,33,33,1) 100%);
-    box-shadow: -10px 7px 6px rgba(0, 0, 0, 0.4),
-                -5px 3.5px 8px rgba(0, 0, 0, 0.4),
-                2.5px 1.75px 16px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+div.row { /* 1.2 Inicio da edição das linhas que vão dentro do conteiner. O tamanho das linhas e seus alinhamentos são definidos aqui*/
+    margin-left: -5px;
+    margin-right: -5px;
+}
+div.row::before, .row::after{
+    content: "";
+    display: table;
+}
+div.row::after{
+    clear: both;
+}/*Fim da edição das linhas internas do conteiner*/
+div.col {/* 1.3 Edição das colunas que vão dentro das linhas que vão dentro do conteiner do site*/
+    display: inline-block; /*Tipo de display adotado no site (blocos em linha)*/
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}/*Fim da edição das colunas que vão dentro das linhas que vão dentro do conteiner do site*/
+/*Fim da edição do conteiner*/
 
-    position: absolute;
-    width: 86%;
-    top: 44.5em;
+/*Inicio da edição do header da pagina, onde contem o menu de navegação!*/
+header#cabecalho {
+    text-align: center;
+    height: 3em;
+    /*border-bottom: 1px solid red;*/
+    font-family: 'Montserrat', sans-serif;
 }
-div.theme{
-    box-sizing: border-box;
+header#cabecalho::after{
+    content: '';
+    margin: .5em auto;
+    display: block;
+    width: 55em;
+    height: .09em;
+    background: #f00;
+}
+header#cabecalho a {
+    text-decoration: none;
+    color: black;
+}
+header#cabecalho li {
+    font-size: 1.6em;
+    display: inline-block;
+    padding: .2em 1.5em;
+}
+/*header#cabecalho a:nth-child(2){
+    border-bottom: 1px solid red;
+}*/
+header#cabecalho a:nth-child(2)::after {
+    content: '';
+    display: block;
     position: absolute;
-    width: 30%;
-    height: 40em;
-    top: -10em;
-    margin-left: .6em;
-    background-color: #222222;
-    box-shadow: -15px 7px 6px rgba(0, 0, 0, 0.4),
-    -7.5px 3.5px 8px rgba(0, 0, 0, 0.4),
-    3.75px 1.75px 32px rgba(0, 0, 0, 0.4);
+    margin: 0 40.9%;
+    width: 80px;
+    height: 3px;
+    background: #f00;
+  }
+section#inicio h1 {
+        font-family: 'Raleway', sans-serif;
+        padding-top: 3em;
+        padding-left: 4em;
+}
+/*Fim da edição do header da pagina, onde contem o menu de navegação!*/
 
-}
-div.bk_theme{
-    box-sizing: border-box;
-    position: absolute;
-    width: 30%;
-    height: 40em;
-    top: -7em;
-    margin-left: 2em;
-    background-color: #111111;
-    box-shadow: -8px 3.5px 5px rgba(0, 0, 0, 0.4),
-                -4px 1.75px 20px rgba(0, 0, 0, 0.4),
-                2px 0.75px 40px rgba(0, 0, 0, 0.4);
-}
-div.wrapper{
-    width: 46.25em;
-    min-height: 18.75em;
-    margin: 0em auto 0em 21.875em;
-    padding-top: 1.25em;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
 
+
+
+/*Estilização da div Wrapper e seus "filhos"*/
+/*Inicio da edição de paragrafos da classe wrapper*/
+div.wrapper section {
+    width: 75%;
 }
-div.wrapper p{
-    font-size: 16px;font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+div.wrapper section article p { /*Estilização dos paragrafos filhos de sections vindas de wrapper*/
+    line-height: 1.5em;
+    padding: 4%;
+    background-color: black;
+    font-size: 16px;font-family: 'Raleway',Arial, Helvetica, sans-serif;
     margin: 10px;
-}
-div.wrapper h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif;
-    color: aliceblue;
-}
-div.wrapper section{
-    filter: opacity(0%);
-    top: 2em;
+    filter: opacity(0%); /*Aqui eu defini que por padrão os paragrafos do dentro de wrapper serão invisiveis*/
     border-top: .2em solid rgba(95, 95, 95, 0.5);
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 600px ;
-    position: relative;
     transition: all 0.6s ease-in-out;
 }
-div.wrapper section:hover{
-    filter: opacity(100%);
+div.wrapper section article p:hover{ /*:hover dos paragrafos filhos de sections vindas de wrapper*/
+    filter: opacity(100%); /*Define o texto visivel novamente*/
     background-color: #212121;
     color: white;
     border-top: .005em solid rgba(95, 95, 95, 0.5);
-    top: 1.5em;
+    top: 6em;
     border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5),
                 0 2px 7.5px rgba(0, 0, 0, 0.4),
                 0 1px 3.75px rgba(0, 0, 0, 0.3);
 }
-
-/*Edição do header*/
-header#cabecalho{
-    top: 0px;
+div.wrapper article p::first-letter {
+    padding-left: 3%;
+}
+div.wrapper section > h3 { /*Este elemento não faz parte diretamente de paragrafos, mas é um texto então se engloba aqui*/
+    font-family: 'Raleway', Helvetica, sans-serif;
+    color: black;
+    padding-left: .7em;padding-top: .4em;
+    border-bottom: .007em solid #212121;
+    width: fit-content;
+}
+/*Fim da edição de paragrafos da classe wrapper*/
+div.wrapper section article:hover::before{
+    content: "";
     position: absolute;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-border-bottom: .09em solid #303030;    
-}
-header#cabecalho li{
-    list-style: none;
-    padding: 20px;
-}
-header#cabecalho a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-}
-/*Fim da edição do header*/
-
-/*Edição do conteudo lateral*/
-div.card-box{
-    position: absolute;
-    text-align: center;
-    width: 18.75em;
-    height: 25em;
-    top: -15%;
+    display: block;
     background-color: #303030;
-    color: white;
-    box-shadow: -10px 7px 6px rgba(0, 0, 0, 0.4),
-                -5px 3.5px 8px rgba(0, 0, 0, 0.4),
-                2.5px 1.75px 16px rgba(0, 0, 0, 0.4);
-    margin-left: 3.125em;
+    width: 75%;
+    height: 40%;
+    margin-top: -8px;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+    box-shadow: 0 0.250em 0.938em rgba(0, 0, 0, 0.5),
+    0 2px 7.5px rgba(0, 0, 0, 0.4),
+    0 1px 3.75px rgba(0, 0, 0, 0.3);
 }
-div.card-box hgroup {
-    font-family: 'Montserrat',Arial, Helvetica, sans-serif;}
-div.card-box figure{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin: 0 auto;
-    box-shadow: 0px 1.5px 10px #21212181,
-    0px 1px 20px #21212181,
-    0px .5px 25px #21212181;
-}
-div.card-box figcaption{
-    display: none;
-}
-/*Fim da edição do conteudo lateral*/
-
-div.midias-sociais li{
-    list-style: none;
-    padding: 5px;
-    display: inline-block;
-}
-div.midias-sociais a {
-    color: white;
-}
-
