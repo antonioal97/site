@@ -59,6 +59,7 @@ header#cabecalho::after{
 header#cabecalho a {
     text-decoration: none;
     color: black;
+    padding: 13px;
 }
 header#cabecalho li {
     font-size: 1.6em;
@@ -77,7 +78,7 @@ header#cabecalho a:nth-child(2)::after {
     height: 3px;
     background: #f00;
   }
-section#inicio h1 {
+section#template h1 {
         font-family: 'Raleway', sans-serif;
         padding-top: 3em;
         padding-left: 4em;
