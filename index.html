@@ -4,99 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="_css/estilo.css">
+    <meta name="description" content="O curriculo que vocÊ vai ver e se lembrar para sempre">
+    <meta name="keywords" content="Curriculo pessoal, Portfolio pessoal, Web developer">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Antônio Alberto Correa Junior">
+    <title>@antonio</title>
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="_images/icon.png"><!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 </head>
-<body>
-    <div class="container"> <!--Este primeiro container, serve para englobar apenas o header do site, que contem o menu de navegação para os elementos internos-->
-        <div class="row"> <!--Está será a linha passante por toda a tela-->
-            <div class="col"><!-- Essa é a coluna, que vai conter dentro da div row. Aqui eu posso usar quantas colunas colberem na tela !-->
-                <header id="cabecalho"> <!-- Este header contem o cabeçalho de navegação entre as divisões do site, nada de links externos! Apenas internos do próprio site-->
-                    <nav>
-                        <ul>
-                            <a href="index.html"><li>Início</li></a>
-                            <a href="#contato"><li>Contato</li></a>
-                            <a href="#sobre"><li>Sobre</li></a>
-                            <a href="#bio"><li>Bio</li></a>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <main>
-            <!--#############################################################################################-->
-            <div class="row"> <!--Seção inicial do site, onde vai conter a imagem de apresentação do site!-->
-                <div class="col">
-                    <section id="template">
-                        <h1>Bem vindo, este é o Início do site</h1>
-
-                    </section>
-                <div class="col">
-                    
-                </div>
-                </div>
-            </div>
-            <!--#############################################################################################-->
-            <div class="row"> <!--Seção contato do site-->
+    <body>
+        <div class="container">
+            <header class="cabecalho"> <!--Cabeçalho superior que contem os menus de navegação do site-->
+                <img src="_images/avatar-site.svg" alt="minha-foto">
+                <nav><!--Menu de navegação da página!-->
+                    <ul> <!--Lista de navegação entre páginas do site-->
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Sobre</a></li>
+                    </ul><!--Fim da lista de navegação entre páginas do site-->
+                </nav><!--Fim do menu de navegação da página!-->
+            </header><!--Fim do cabeçalho superior que contem os menus de navegação do site-->
+            <div class="row">
                 <div class="col">
                     <div class="wrapper">
-                        <section id="contato">
-                            <h3>Where does it come from?</h3>
+                        <section >
+                            <h1>O melhor curriculo que você verá!</h1>
                             <article>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                            </article>
-                        </section>
-                    </div>
-                    <br/>
-                </div>
-            </div>
-            <!--#############################################################################################-->
-            <div class="row"> <!--Seção do site "Sobre"-->
-                <div class="col">
-                    <div class="wrapper">
-                        <section id="sobre">
-                            <h3>Why do we use it?</h3>
-                            <article>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                            </article>
-                        </section>
-                    </div>
-                    <br/>
-                </div>
-            </div>
-            <!--#############################################################################################-->
-            <div class="row"> <!--Seção "Bio" do site-->
-                <div class="col">
-                    <div class="wrapper"> <!--Simplismente para organizar/padronizar o conteudo de uma section dentro do site-->
-                        <br/>
-                        <section id="bio">
-                            <h3>What is Lorem Ipsum?</h3>
-                            <article>
+                                <h3>What is Lorem Ipsum?
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </article>
                         </section>
                     </div>
-                    <br/>
                 </div>
             </div>
-            <!--#############################################################################################-->
-            <div class="row"> <!--Footer do site!-->
-                <footer>
-                    <section>
-                        <article>
-                            <h4>Meu nome?</h4>
-                            <h1>Antônio Alberto</h1>
-                            <h3>E eu sou um programador!</h3>
-                            <h6>Since 2019 &copy;</h6>
-                        </article>
-                    </section>             
-        </footer>
+            <div class="midias-sociais">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/antonioal97" target="_blank" rel="rel=noopener"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
             </div>
-        </main>
-    </div>
-</body>
+        </div>
+    </body>
 </html>
