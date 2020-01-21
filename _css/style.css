@@ -124,29 +124,28 @@ h1, h2, h3
 
 /*Início da edição da section hero da página*/
 .hero__section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../_images/Coding.png);background-size: cover;
+    background-image: url(/_images/Searching.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 15rem;
     min-height: 100vh;
-    width: 55%;
 }
     .hero__section::after{
         content: "";
         position: absolute;
-        left: 15%;
+        top: 0;
         background-image: linear-gradient(to right top, #4285f4, #367ef7, #2978fa, #1c70fd, #0e69ff);
-        min-height: 100vh;
-        width: 50%;
+        height: 40vh;
+        min-width: 100%;
         display: block;
         z-index: -1;
     }
 .hero__section .btn{
     border-radius: 4px;
     background-color: #fff;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.205),
-                0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #4285F4;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.205),
+                0 5px 16px rgba(0, 0, 0, 0.1);
     padding: 20px 50px;
     text-transform: uppercase;
     font-family: 'Montserrat', Helvetica, sans-serif;
