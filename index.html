@@ -15,21 +15,19 @@
     <link rel="stylesheet" href="_css/style.css">
 </head>
     <body>
-        <section class="hero__section">
-            <h1>Welcome to my web-site</h1>
-            <h3>Escrevendo códigos e formando aprendizados</h3>
-            <a class="btn" href="">Saiba mais</a>
-
-            <section class="sobre"></section>
-                <h3>Where does it come from?
-                </h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                <hr>
-                <ul class="grid">
-                    <li class="smal" style="background-image: url('_images/Searching.png')"></li>
-                    <li class="smal" style="background-image: url('_images/Product Launch.png')"></li>       <li class="smal" style="background-image: url('_images/Coding.png')"></li>
-                    <li class="smal" style="background-image: url('_images/avatar-site.svg')"></li>
-                </ul>
+        <div class="wrapper"> <!--Essa é a div que alinha todo o conteúdo ao centro da página, servindo apenas para isso e contendo uma leve estilização!-->
+            <header class="cabecalho" role="banner"><!--Cabeçalho principal da página, leva consigo uma foto minha (3x4) menu de navegação e botão p/ envio de e-mail-->
+                <img src="/_images/avatar-img.svg" alt="Esta é a minha foto, apenas uma foto para apresentação!"><a href="index.html"></a></img><!--Esta é uma foto pessoal minha em tamanho reduzido, apenas para mostrar o "criador" do site-->
+                <nav class="cabecalho__mainmenu"><!--Menu de navegação da página, contém apenas links que referenciam a parte interna do site-->
+                    <ul><!--Itens do menu navegação-->
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul><!--Fim dos itens do menu de navegação-->
+                </nav><!--Fim do menu de navegação-->
+                <button class="send-msg">Envie-me um e-mail</button>
+            </header><!--Fim do cabeçalho principal da página-->
             <div class="midias-sociais">
                 <ul>
                     <li><a href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener"><i class="fa fa-facebook-square"></i></a></li>
@@ -39,41 +37,18 @@
                     <li><a href="https://web.whatsapp.com/" target="_blank" rel="rel=noopener"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
             </div>
-        </section>
-        <div class="container">
-            <header class="cabecalho__header"> <!--Cabeçalho superior que contem os menus de navegação do site-->
-                <a href="index.html"><img class="cabecalho__img-user" src="/_images/avatar-site.svg" alt="Antônio Alberto - Jovem estudante, desenvolvedor e criador de ideias!"></img></a>
-                <nav class="cabecalho__main-menu">
-                    <ul> <!--Lista de navegação entre páginas do site-->
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul><!--Fim da lista de navegação entre páginas do site-->
-                </nav><!--Fim do menu de navegação da página!-->
-            </header><!--Fim do cabeçalho superior que contem os menus de navegação do site-->
-            <div class="row">
-                <div class="col">
-                    <div class="wrapper">
-                        <section >
-                            <h1>O melhor curriculo que você verá!</h1>
-                            <article>
-                                <h3>What is Lorem Ipsum?
-                                </h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </article>
-                        </section>
+            <main role="main">
+                <section>
+                    <div class="sobre">    
+                        <article>
+                            <h1>Where does it come from?
+                            </h1>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            </p>
+                        </article>
                     </div>
-                </div>
-            </div>
-
-
-
-
-            <footer class="footer__container">
-
-
-            </footer>
-        </div>
-    </body>
-</html>
+                </section>
+            </main>
+        </div><!--Fim da div que alinha todo o conteúdo ao centro da página-->
+        </body>
+        </html>

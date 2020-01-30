@@ -4,25 +4,7 @@
     ul{list-style: none;}a{text-decoration: none;cursor: pointer;}
     /*Fim da formatação de reset da página*/
 
-    /* 1. Edição do conteiner que irá englobar e ser o elemento "pai" do site, ele irá referenciar os outros elementos*/
-div.container {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    border: 1rem solid purple;
-    width: 100%;
-    margin-top: 8.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1.250rem;
-}
-    @media (min-width: 1170px) {
-        .container {
-            max-width: 1170px;
-            padding: 0;
-        }
-    }
-    /* 1.2 Inicio da edição das linhas que vão dentro do conteiner. O tamanho das linhas e seus alinhamentos são definidos aqui*/
     div.row {margin-left: -5px;margin-right: -5px;}div.row::before, .row::after{content: "";display: table;}div.row::after{clear: both;}
-    /*Fim da edição das linhas internas do conteiner*/
     
     /* 1.3 Edição das colunas que vão dentro das linhas que vão dentro do conteiner do site*/
         div.col {display: inline-block;vertical-align: top;min-height: 1px;padding-left: 5px;padding-right: 5px;width: 100%;margin-right: -4px;*zoom: 1;*display: inline;}
@@ -51,112 +33,100 @@ div.container {
     /*Fim da edição das colunas que vão dentro das linhas que vão dentro do conteiner do site*/
     /*Fim da edição do conteiner*/
 
-/*Início da edição das estilizações básicas da página como fonte e cores */
-/*Fontes de titulos*/
-h1, h2, h3 
-    {font-weight: bold;line-height: 1.25;font-family: 'Montserrat', Helvetica, sans-serif;}
-        h1 {font-size: 2.75rem;}
-            h2 {font-size: 2.25rem;color: #011627;}
-                h3 {font-size: 1.5rem;color: #011627;}
+/*Reset da página*/
+*,*::before,*::after{margin:0; padding: 0; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-size: 100%;text-decoration: none;list-style: none;background-size: cover;}
+/*Fim do Reset da página*/
 
+/*===================================*/
+/*Edição do wrapper que é o container alinhador da página da página*/
+.wrapper{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 100vh auto;
+    width: 80%;
+}
+/*Fim da edição do wrapper*/
 
-/*Edição do cabeçalho da página*/
-.cabecalho__header{
+/*===================================*/
+/*Inicio da edição do cabecalho da página*/
+.cabecalho{
     position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    left: 0;
     top: 0;
-    min-height:5rem;
-    width: 100%;}
-.cabecalho__main-menu > ul{
+    left: 0;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 6rem;
 }
-    .cabecalho__main-menu > ul li {
-        font-family: 'Montserrat', Helvetica, sans-serif;
-        font-weight: 900;
-        text-shadow: 0 0 1px black;
-        margin: 0 15px;
-        height: 2rem;width: 5rem;
-        display: flex;text-align: center;
+@media(max-width: 700px){
+    .cabecalho{
+        flex-direction: column;
+        height: min-content;
+        
     }
-        .cabecalho__main-menu li a:hover::after{
-            content: "";
-            display: block;
-            background-color:#4285f4;
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-            height: 4px;
-            width: 100%;
-            z-index: -1;
-            margin-top: 0.5rem;
-        }
-            .cabecalho__main-menu li:first-child{
-                margin-left: 0;
-            } 
-                .cabecalho__main-menu li:last-child{
-                margin-right: 0;
-                } 
-                @media (max-width: 700px){
-                    .cabecalho__header{
-                        flex-direction: column;
-                }
-                        .cabecalho__img-user{
-                        margin-bottom: 15px;}
-                    }
-                            .cabecalho__header > nav a{
-                        opacity: 0.6;
-                        color: black;
-                        padding: 0.5rem;width: 5rem;
-                        }
-                                .cabecalho__header > nav a:hover{
-                        opacity: 1;
-                            }
-.cabecalho__img-user{
-        width: 3.5rem;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.295), 2px 2px 6px rgba(255, 255, 255, 0.5);           
+    .cabecalho > img {
+        margin-top: 20px 0;
+    }
 }
-/*Fim da edição do cabeçalho da página*/
-
-/*Início da edição da section hero da página*/
-.hero__section{
-    background-image: url(/_images/Searching.png);
+.cabecalho::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 94vh;
+    top: 5.5rem;
+    color: black;
+    z-index: -1;
+    background-image: url('/_images/sobre.png');
+    background-size: inherit;
     background-repeat: no-repeat;
-    background-size: 55%;
-    background-position: 15rem;
-    min-height: 100vh;
 }
-    .hero__section::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        background-image: linear-gradient(to right top, #4285f4, #367ef7, #2978fa, #1c70fd, #0e69ff);
-        height: 40vh;
-        min-width: 100%;
-        display: block;
-        z-index: -1;
+.cabecalho > img{
+    width: 4rem;
+    border-radius: 50%;
+}
+    .cabecalho__mainmenu ul{
+    display: flex;
+    position: relative;
+    width: 27rem;
+    height: 3rem;
+    border-bottom: 3px solid #eee;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     }
-.hero__section .btn{
-    border-radius: 4px;
-    background-color: #fff;
+        .cabecalho__mainmenu ul li{
+    display: flex;
+    margin: 0 0.5px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+        }
+            .cabecalho__mainmenu ul li :only-child{
+    font-weight: 700;
+    flex-grow: 1;
+    font-size: 20px;
     color: #4285F4;
-    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.205),
-                0 5px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px 50px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 1.2rem;
-}
-/*Fim da edição da section hero da página*/
+    padding: 10px;
+    opacity: 0.7;
 
+            }
+            .cabecalho__mainmenu ul li :first-child:hover{
+                opacity: 1;
+                border-bottom: 3px solid #4285f4;   
+            }
+            .cabecalho__mainmenu ul li :focus{
+                background-color: #f8f8f8;
+                border-left: 1px solid #4285f4;
+                border-right: 1px solid #4285F4;
+                border-top: 1px solid #4285F4;
+                border-bottom: 3px solid #4285F4;
+               border-radius: 3px;
+               box-shadow: 0 1px 4px #ccc;
+            }
+            
+/*Fim da edição do cabecalho da página*/
 
-
-/*Edição da página SOBRE*/
-.sobre {
-    display: flex;flex-direction: column;align-items: center;padding: 100px 50px;
-}
+/*===================================*/
