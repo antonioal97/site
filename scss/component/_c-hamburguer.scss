@@ -1,0 +1,80 @@
+$component-name:  "c-hamburguer";
+
+.#{$component-name}{
+	border-radius:							50%;
+	border:									none;
+	cursor:									pointer;
+	display: 								block;
+	height: 								rem(60);
+	left: 									rem(20);
+	position:								fixed;
+	width: 									rem(60);
+	transition: 							550ms ease-in;
+	top: 									rem(1.5);
+	z-index: 1;
+	&:hover,
+	&:target{
+		background-color: 					lighten(#EBEBE3,5%);
+		opacity: 							.7;
+	}
+	&__bar{
+		background-color: 		var(--color-p-black);
+		display:							block;
+		height:								rem(5.5);
+		margin: 							50% auto;
+		position:							relative;
+		transition:						all .8s ease-in;
+		width:								rem(35);
+		&::before,
+		&::after{
+			align-items:				center;
+			background-color:		var(--color-p-black);
+			content: 						"";
+			display: 						flex;
+			height:							inherit;
+			position:						absolute;
+			transition:					inherit;
+			width: 							inherit;
+		}
+		&::before{
+			margin-top: 				25%;
+		}
+		&::after{
+			margin-top: 			  -25%;
+		}
+	}
+}
+//Ativações do botão hamburguer
+##{$component-name} {
+	display: none;
+	&:checked ~ .#{$component-name}{
+		left: 											rem(225);
+		background-color: 								transparent;
+		@include breakpoint(large-up){
+			left:										rem(265);
+		}
+	}
+	&:checked ~ .c-sidebar{
+		left: 											0;
+	}
+	&:checked ~ .#{$component-name} .#{$component-name}__bar{
+		background-color: 					var(--color-p-primary);
+		border-bottom-right-radius: $global-radius;
+		border-top-left-radius: 		$global-radius;
+		transform:									rotate(45deg);
+	}
+	&:checked ~ .#{$component-name} .#{$component-name}__bar::before{
+		background-color: 					var(--color-p-primary);
+		border-bottom-left-radius: 	$global-radius;
+		border-top-right-radius: 		$global-radius;
+		bottom:											0;
+		transform:									rotate(90deg);
+	}
+	&:checked ~ .#{$component-name} .#{$component-name}__bar::after{
+		background-color: 					var(--color-p-primary);
+		border-bottom-left-radius:	$global-radius;
+		border-top-right-radius: 		$global-radius;
+		bottom:											0;
+		transform:									rotate(-90deg);
+	}
+}

@@ -1,0 +1,56 @@
+$component-name: 'c-main-menu';
+
+.#{$component-name}{
+  width:                            100%;
+  position:                         relative;
+  &::after{
+      //Circulo abaixo da lista de menu
+    @include                        pseudo();
+    left:                           50%;
+    top:                            85%;
+    z-index:                        -1;
+    transform:                      translate(-50%);
+    background-color:               var(--color-p-white);
+    border-radius:                  50%;
+    height:                         rem(50);
+    width:                          rem(50);
+  }
+  &__list{
+    background-color:               var(--color-p-white);
+    border-radius:                  rem(4);
+    overflow:                       hidden; 
+    @include                        flexbox();
+    @include                        flex-direction(column); 
+    li{
+      margin:                       rem(9);
+    }
+  }
+  &__link{
+    @include                        flexbox;
+    @include                        align-items(center);
+    color:                          var(--color-p-primary);
+    background-color:               var(--color-p-white);
+    padding:                        rem(10) rem(15);
+    font-family:                    'Montserrat', sans-serif;
+    font-weight:                    450;
+    border-radius:                  rem(4);
+    @include                        box-shadow(
+                                      2px 2px 8px lighten(#969691,35%),
+                                        -2px 2px 8px lighten(#C0C0B9,10%));
+    transition:                     all 550ms ease-in;
+    &:hover{
+      background-color:             var(--color-p-primary);
+      color:                        var(--color-p-white);
+      transform:                    scale(1.02);
+    }
+    &:focus{
+      background-color:             var(--color-p-secondary);
+      color:                        var(--color-p-white);
+      transform:                    scale(1.02);
+    }
+    .fas{
+      margin:                           0px 20px 0px 0px;
+      font-size:                        rem(17);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+h1,
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--color-p-black);
+}
+button{
+  outline: none;
+  border: none;
+  color: var(--color-p-black);
+}

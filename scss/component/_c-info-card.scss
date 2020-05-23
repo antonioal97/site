@@ -1,0 +1,41 @@
+$component-name: "c-info-card";
+
+.#{$component-name}{
+  margin-top:                       rem(-25);
+  width:                            100%;
+  height:                           rem(75);
+  font-size:                        10pt;
+  padding:                          rem(5);
+  position:                         relative;
+  color:                            var(--color-p-black);
+  background-color:                 var(--color-p-white);
+  border-radius:                    $global-radius;
+  transition:                       transform 650ms;
+  &:hover{
+    transform:                      scale(1.02);
+  }
+  h3,h4{
+    font-family:                   'Raleway',Helvetica;
+  }
+  h3{
+    font-style:                     5pt;
+    @include                        transparent-text (#2EB0E5,#418FF1,#4285F4)
+  }
+  h4{
+    font-size:                       7pt;
+    opacity:                         .7;
+    font-style:                      italic;
+  }
+  figure{
+    img{
+      margin:                        rem(5) rem(2);
+      float:                         left;
+      max-width:                     100%;
+      width:                         rem(50);
+      height:                        rem(50);
+    }
+    figcaption{
+      display:                       none;
+    }
+  }
+}

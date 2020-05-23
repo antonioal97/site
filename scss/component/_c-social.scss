@@ -1,0 +1,41 @@
+$component-name: "c-social";
+
+.#{$component-name}{
+  background-color:               var(--color-p-white);
+  border-radius:                  $global-radius;
+  height:                         3.5rem;
+  width:                          100%;
+  @include                        flexbox();
+  @include                        flex-direction(row);
+  @include                        justify-content(center);
+  @include                        align-items(center);
+  position:                       relative;
+  &::before{
+      //Bolinha azul acima da caixa dos links
+    @include                      pseudo();
+    left:                         50%;
+    bottom:                       9.5%;
+    transform:                    translate(-50%);
+    top:                          rem(-6);
+    border-radius:                50%;
+    width:                        rem(10);
+    height:                       rem(10);
+    background-color:             var(--color-p-primary);
+    @include                      box-shadow(
+                                    2px 2px 8px var(--color-w-white-2), 
+                                    -2px 2px 8px var(--color-w-white-1));
+  }
+  .c-main-menu__list{
+    @include                      flex-direction(row);
+    @include                      flex(1);
+    @include                      flexbox;
+    @include                      justify-content(center);
+    li{
+      margin:                     rem(4);
+    }
+    &__link{
+      font-size:                  rem(14);
+      @include                    flex(1);
+    }
+  }
+}

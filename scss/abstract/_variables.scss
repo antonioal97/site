@@ -1,0 +1,84 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+$project-colors: (
+  //-> al97 é só uma básica abreviação que gosto do meu nome e data de nascimento.
+  //Nada especifico, como é um projeto pessoal, nada impede de utilizar.
+  'p-primary'  : #2EB0E5,
+  'p-secondary': #4285F4,
+  'p-white'    : #EBEBE3,
+  'p-black'    : #1D1F21,
+  'p-dark'     : #1F2020,
+);
+$colorActions: (
+  //Cores de botões confirmar excluir etc etc:)
+  'btn-success'  : #3cc368,
+  'btn-warning'  : #f5a600,
+  'btn-error'    : #ec5840,
+);
+$c-white: (
+  //Gradiente básico que pode ser possivelmente usado
+  'w-white-1 '  : #C0C0B9,
+  'w-white-2'   : #969691,
+  'w-white-3'   : #6E6E6B,
+  'w-white-4'   : #494947,
+  'w-invert'    : #14141C,
+);
+$social-media-colors: (
+  //Coloração das midias sociais
+  'facebook'  : #3b5998,
+  'twitter'   : #00aced,
+  'linkedin'  : #0077b5,
+  'youtube'   : #cd201f,
+  'instagram' : #e4405f,
+  'github'    : #333,
+);
+
+
+
+
+// ==========================================================================
+// As medidas utilizadas no projeto (gera uma melhor padronização)
+// ==========================================================================
+
+$global-max-width-raw: 780;
+$global-max-width    : rem($global-max-width-raw);
+
+$global-font-size  : rem(18);
+$global-line-height: 1.5;
+$global-radius     : rem(6);
+$global-module-size: rem(30);
+
+// ==========================================================================
+// Transitions
+// ==========================================================================
+
+$transition-duration         : 305ms;
+$transition-duration-complex : 385ms;
+$transition-duration-entrance: 235ms;
+$transition-duration-exit    : 205ms;
+$transition-duration-fast    : 150ms;
+
+$transition-function-ease-in-expo     : cubic-bezier(.95, .05, .795, .035);
+$transition-function-ease-out-expo    : cubic-bezier(.19, 1, .22, 1);
+$transition-function-ease-in-back     : cubic-bezier(.6, -.28, .735, .045);
+$transition-function-ease-out-back    : cubic-bezier(.175, .885, .32, 1.275);
+$transition-function-ease-in-out-circ : cubic-bezier(.785, .135, .15, .86);
+$transition-function-ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+$transition-function-elastic          : cubic-bezier(.175, .885, .41, 1.46);
+
+
+
+// ==========================================================================
+// Others
+// ==========================================================================
+
+$z-indexes: (
+  'above'   : 500,
+  'modal'   : 400,
+  'overlay' : 300,
+  'dropdown': 200,
+  'default' : 1,
+  'below'   : -1,
+);

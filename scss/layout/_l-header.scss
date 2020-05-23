@@ -1,0 +1,58 @@
+$component-name:  "l-header";
+
+.#{$component-name}{
+  background-color:         var(--color-p-white);
+  height:                   100vh;
+  width:                    100%;
+  @include                  flexbox;
+  @include                  flex-direction(column);
+  @include                  justify-content(space-evenly);
+  @include                  align-items(center);
+  @include breakpoint(large-up){
+    .c-btn{
+      padding:              10px 25px;
+      font-size:            18pt;
+      font-weight:          350;
+    }
+  }
+  .landing{
+    padding:                rem(15);
+    margin:                 7.5% auto;
+    width:                  100%;
+    height:                 fit-content;
+    h1,
+    h2{
+      font-family:          'Raleway',Helvetica;
+      @include              transparent-text (#2EB0E5,#418FF1,#4285F4);
+    }
+    h1{
+      font-size:            rem(65);
+    }
+    h2{
+      font-size:            rem(32.5);
+      margin-bottom:        rem(21);
+    }
+    p{
+      font-size: 13pt;
+    }
+    @include breakpoint(large-up){
+      padding:              rem(10);
+      width:                80%;
+      margin:               0 auto;
+      min-width:            rem($global-max-width);
+      h1{
+        font-size:          78pt;
+        width:              100%;
+      }
+      h2{
+        font-size:          39pt;
+      }
+      p{
+        font-size:          20pt;
+      }
+    }
+  }
+  .c-btn{
+    margin-top: rem(-25);
+  }
+}
