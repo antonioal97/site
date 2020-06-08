@@ -1,13 +1,13 @@
 $component-name: "l-footer";
 
 .#{$component-name}{
-  color: var(--color-p-white);
   height: 50vh;
   padding: rem(10);
   width: 100%;
   text-align: center;
-  background-color: var(--color-w-invert);
+  background-color: color(element,e-black);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23151a1f' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231f2021' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2324323d' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2313373e' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%232c4d64' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23004d68' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2332698a' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23006498' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23348db9' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230076c7' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232caae0' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%233f82f0' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  
 }

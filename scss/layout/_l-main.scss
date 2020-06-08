@@ -1,8 +1,8 @@
 $component-name: "l-main";
 
 .#{$component-name}{
-  background-color:       var(--color-p-white);
-  min-height:             100vh;
-  overflow:               hidden;
-  max-width:              100vw;
+  section{
+      margin-top: rem(25);
+      margin-bottom: rem(25);
+  }
 }

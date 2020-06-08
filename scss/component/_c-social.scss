@@ -1,14 +1,14 @@
 $component-name: "c-social";
 
 .#{$component-name}{
-  background-color:               var(--color-p-white);
+  background-color:               color(brand,light);
   border-radius:                  $global-radius;
   height:                         3.5rem;
   width:                          100%;
-  @include                        flexbox();
-  @include                        flex-direction(row);
-  @include                        justify-content(center);
-  @include                        align-items(center);
+  display:                        flex;
+  flex-direction:                 row;
+  justify-content:                center;
+  align-items:                    center;
   position:                       relative;
   &::before{
       //Bolinha azul acima da caixa dos links
@@ -20,22 +20,21 @@ $component-name: "c-social";
     border-radius:                50%;
     width:                        rem(10);
     height:                       rem(10);
-    background-color:             var(--color-p-primary);
-    @include                      box-shadow(
-                                    2px 2px 8px var(--color-w-white-2), 
-                                    -2px 2px 8px var(--color-w-white-1));
+    background-color:             color(brand,light);
+    box-shadow:                    2px 2px 8px color(light,l-white-2), 
+                                   -2px 2px 8px color(light,l-white-1);
   }
   .c-main-menu__list{
-    @include                      flex-direction(row);
-    @include                      flex(1);
-    @include                      flexbox;
-    @include                      justify-content(center);
+    flex-direction:                 row;
+    flex:                           1;
+    display:                        flex;
+    justify-content:                center;
     li{
       margin:                     rem(4);
     }
     &__link{
       font-size:                  rem(14);
-      @include                    flex(1);
+      flex:                           1;
     }
   }
 }

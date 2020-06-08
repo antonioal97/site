@@ -4,20 +4,20 @@ $component-name:  "c-sidebar";
     height:               100vh;
     width:                rem(215);
     padding:              rem(5);
-    @include              flexbox();
-    @include              flex-direction(column);
-    @include              align-items(center);
-    @include              justify-content(space-around);
+    display:              flex;
+    flex-direction:       column;
+    align-items:          center;
+    justify-content:      space-around;
     position:             fixed;
     left:                 -100rem;
     top:                  0;
 		transition: 					all 725ms ease-in;
-    background-image:     linear-gradient(
-                            to right, 
-                          #fa8072,
-                            darken(#fa8072,2.5%));
-    z-index: 1;
+    background-image:     linear-gradient(to right,
+                            color(light,l-white-3),
+                            color(light,l-white-4),
+                            color(brand,light)  
+                          );    
     @include breakpoint(large-up){
       width: rem(250);
     }
-                          }
+}

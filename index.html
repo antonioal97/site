@@ -9,90 +9,57 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Antônio Alberto Correa Junior (antonioal97)">
   <title>Antônio Alberto - Amante de música e Desenvolvedor Front End</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <!--<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">-->
   <link rel="manifest" href="/site.webmanifest">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway" rel="stylesheet">
   <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <input type="checkbox" id="c-hamburguer"><!--Botão hamburguer-->
+  <label for="c-hamburguer" class="c-hamburguer">
+    <span class="c-hamburguer__bar"></span>
+  </label>  <!--Fim do botão hamburguer--> 
   <header role="banner" id="l-header" class="l-header">
-    <input type="checkbox" id="c-hamburguer"><!--Botão hamburguer-->
-    <label for="c-hamburguer" class="c-hamburguer">
-      <span class="c-hamburguer__bar"></span>
-    </label>  <!--Fim do botão hamburguer--> 
-    <div class="c-sidebar"><!--Sidebar e menu de navegação do site-->
-      <div class="c-info-card">
-        <figure>
-          <img src="img/info-card.png" alt="Esta é a minha foto pessoal ">
-          <figcaption>Antônio Alberto C.J. foto escolhida para fazer parte do card principal</figcaption>
-        </figure>
-        <h3>Antônio Alberto</h3>
-        <h4>Estudante de Análise e Desenvolvimento de Sistemas,</h4>
-        <h4>Auxíliar Administrativo</h4>
+    <div class="hero">
+      <div class="hero__landing">
+        <div class="hero__title">
+          <h1>I'm Antônio Alberto</h1>
+          <h2>Musician & Programming Student</h2>
+        </div>
+        <div class="hero__text">
+          <p>Bem vindo ao meu site pessoal! Não é um blog, apenas minha landing page</p>
+        </div>
       </div>
-      <nav class="c-main-menu">
-        <ul class="c-main-menu__list">
-          <li><a class="c-main-menu__link" href="#l-header"><i class="fas fa-house-user"></i>Home</a></li>
-          <li><a class="c-main-menu__link" href="#l-about"><i class="fas fa-info-circle"></i>Sobre</a></li>
-          <li><a class="c-main-menu__link" href="#l-skills"><i class="fas fa-wrench"></i>Competências</a></li>
-          <li><a class="c-main-menu__link" href="#l-contact"><i class="fas fa-user-astronaut"></i>Contato</a></li>
-        </ul>
-      </nav>
-      <div class="c-social">
-        <ul class="c-main-menu__list">
-          <li>
-            <a class="c-main-menu__link" href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a class="c-main-menu__link" href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="c-main-menu__link" href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a class="c-main-menu__link" href="https://github.com/antonioal97" target="_blank" rel="rel=noopener">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="hero__img">
       </div>
-    </div><!--Fim da sidebar e menu-->
-    <div class="landing">
-      <h1>I'm Antônio Alberto</h1>
-      <h2>Musician & Programming Student</h2>
-      <p> - Programação é muito mais do que apenas códigos aninhados, é um desafio que buscamos superar todos os dias.</p>
     </div>
-    <a href="#l-about" class="c-btn"><i class="fas fa-angle-double-down"></i>Conheça</a>
+    <a href="#l-about" class="c-main-menu__link"><i class="fas fa-angle-double-down"></i>Conheça</a>
   </header>
-
   <main role="main" class="l-main">
     <section id="l-about">
       <article class="c-wrapper">
         <header class="c-wrapper__heading">
-          <h2>Sobre Mim</h2>
-          <h4>This is a small history</h4>
+          <h2>Sobre mim</h2>
+          <h4>Já que chegou até aqui, deixe-me lhe contar uma pequena história...</h4>
         </header>
+
+        <p>A algum tempo conheci um garoto que nitidamente sempre perguntou-se o que fazer após seus dezoito anos e particularmente, acredito que essa seja uma dúvida comum.</p>
+        <p>Ainda sobre este rapaz, quando perguntado e ou se deparava com questões do tipo “o que você quer ser quando crescer?” ele nunca respondida com clareza e dava sempre aquela resposta evasiva sabe?</p>
         <figure>
           <img src="img/about-img.jpg" alt="Estou sou eu, e esta é a minha foto do curriculo on-line">
           <figcaption>Estou sou eu, e esta é a minha foto do curriculo on-line</figcaption>
         </figure>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Eveniet amet nisi quaerat voluptates, facere voluptas, dicta 
-            alias accusantium quas pariatur voluptatibus ex obcaecati? Tenetur 
-            ipsa adipisci eveniet totam aperiam at!
-          </p>
+        <p>Longe de ser alguém “acomodado” o garoto sempre demonstrava interesse por tecnologia, máquinas, softwares e também, pelos desafios que lhes eram propostos. Saber ou não fazer algo não o impedia de tentar, afinal de contas tudo é um aprendizado. Prova disso foi ver a oportunidade de aprender sobre processos industriais, e sem pensar duas vezes abraçar um curso de nível técnico de Instrumentação <s>mesmo sem saber do que se tratava</s>.</p>
+        <p>Parece um história meio clichê não? Mas você também não possuo por um momento assim?Chega um momento na vida que dá vontade de sair entrando em toda e qualquer porta, “atirar pra todos os lados” como diriam alguns aqui da minha cidade, até encontrar uma resposta. Talvez você esteja se identificando e ou conhece alguém que passou por isso mas não se engane, está é uma história verídica!</p>
+        <p>Até aqui tudo bem, mas, e o menino? O que aconteceu com ele?
+        Entrou de cabeça no curso, terminou e com isso conquistou sua primeira graduação técnica. Aquele curso não apenas o apresentou há <a href="https://pt.wikipedia.org/wiki/Man%C3%B4metro" target="_blank" rel="noopener noreferrer">Manômetros</a>, <a href="https://blog.wika.com.br/know-how/sinais-saida-analogicos-transmissores-pressao-4-20-ma/" target="_blank" rel="noopener noreferrer">transmissões de sinal entre 4 ~ 20mA</a>, <a href="https://engprocess.com.br/interface-homem-maquina/" target="_blank" rel="noopener noreferrer">IHM</a>, como o instigou a conhecer informática, mais precisamente a manutenção de hardware. Você deve estar pensando “Aparentemente ele conseguiu um bom emprego na área então?”, mas não! Ele conseguiu um outro bom emprego (mas isso fica pra outro episódio).</p>
+        <p>O que realmente importa é que dali em diante aquele menino ali do começo do texto, conheceu um infinito de possibilidades que ainda não respondiam o que ele poderia ser, mas o faziam sentir como se estivesse no caminho certo. E um belo dia por muito acaso, e já com um bom conhecimento em computadores (no hardware), ele se perguntou “será que tem algo além disso?” abriu o YouTube e conheceu sobre “programação” (para ser mais preciso com esse canal que considero muito <a href="https://www.youtube.com/watch?v=S9uPNppGsGo" target="_blank" rel="noopener noreferrer">Curso em Vídeo</a>.<p>
+        <p>E a partir daí, este rapaz não parou mais de estudar e buscar mais sobre o assunto. Que hoje com a graça de Deus está aqui lhe contando essa história de uma larte de sua vida, mas com certeza uma parte muito significativa e importante.</p>        
           <footer>
-            <p>Texto originalmente postado pelo criador do site.</p>
             <time datetime="2020-05-21 15:15"></time>        
           </footer>
       </article>
@@ -101,42 +68,76 @@
     <section id="l-skills">
       <article class="c-wrapper">
         <header class="c-wrapper__heading">
-          <h2>Seção de competências</h2>
-          <h4>Cursos realizados e noções de aprendizagem</h4>
+          <h2>Competências</h2>
+          <h4>Cursos </br>&</br> Experiências Profissionais</h4>
         </header>
-        <figure>
-          <img src="" alt="">
-          <figcaption>Seção de skills</figcaption>
-        </figure>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Eveniet amet nisi quaerat voluptates, facere voluptas, dicta 
-            alias accusantium quas pariatur voluptatibus ex obcaecati? Tenetur 
-            ipsa adipisci eveniet totam aperiam at!
+        <div>
+          <ul class="c-timeline">
+            <span>Formações</span>
+            <li class="c-timeline__date">
+              <time datetime="2015">2015</time>
+              <p>ETEC - Centro Paula Souza, Registro - SP.</p>
+              <p>Técnico em Instrumentação Industrial</p>
+            </li>
+            <li class="c-timeline__date">
+              <time datetime="2019">2021</time>
+              <p>UNIVR - Centro Universitário do Vale do Ribeira, Registro - SP.</p>
+              <p>Técnologo em Análise e Desenvolvimento de Sistemas.</p>
+            </li>
+          </ul>   
+          <ul class="c-timeline">
+            <span>Onde trabalhei</span>
+              <li class="c-timeline__date">
+              <time datetime="2015">2015</time>
+              <p>Vale Fertilizantes - Cajati - SP.</p>
+              <p>Menor aprendiz atuante na área de Instrumentação & Elétrica Industrial.</p>
+            </li>
+            <li class="c-timeline__date">
+              <time datetime="2016">Agora</time>
+              <p>Art's Móveis e Eletrodomésticos - Jacupiranga - SP.</p>
+              <p>Auxiliar administrativo & Vendedor.</p> 
+            </li>
+          </ul>
+        </div>
+        <footer>
+          <p>Você pode encontrar mais informações sobre minhas formações e locais onde já trabalhei, aqui no meu Linkedin:<a class="c-main-menu__link" href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener">
+            <i class="fab fa-linkedin"></i>Linkedin</a>
           </p>
-          <footer>
-            <p>Estas foram as formações que adquiri até o momento da criação deste site</p>
-            <time datetime="2020-05-21 15:15"></time>        
-          </footer>
+        </footer>
       </article>
     </section>
 
     <section id="l-contact">
       <article class="c-wrapper">
         <header class="c-wrapper__heading">
-          <h2>Seção de contato</h2>
-          <h4>Subtitulo da seção de contatos</h4>
+          <h2>Alguma Pergunta?</h2>
+          <h4>Entre em contato através das redes sociais</h4>
         </header>
-        <figure>
-          <img src="img/info-card.png" alt="">
-          <figcaption>Imagem da seção de contatos</figcaption>
-        </figure>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Voluptatum ipsa veniam deleniti quas perferendis quasi et ea, 
-          ipsum incidunt suscipit cumque dignissimos hic beatae dolore accusantium 
-          aut enim nobis! Nobis!
+        <p>Aqui vão algumas opções para que você possa entrar em contato comigo!
+          <ul class="c-main-menu__list">
+            <li>
+              <a class="c-main-menu__link" href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener">
+                <i class="fab fa-facebook"></i>Facebook
+              </a>
+            </li>
+            <li>
+              <a class="c-main-menu__link" href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener">
+                <i class="fab fa-instagram"></i>Instagram
+              </a>
+            </li>
+            <li>
+              <a class="c-main-menu__link" href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener">
+                <i class="fab fa-linkedin"></i>Linkedin
+              </a>
+            </li>
+          </ul>
         </p>
         <footer>
-          <p>Entre em contato comigo pelas redes sociais acima</p>
+          <p>Confira também alguns dos meus projetos no meu Github:
+              <a class="c-main-menu__link" href="https://github.com/antonioal97" target="_blank" rel="rel=noopener">
+                <i class="fab fa-github"></i>Github
+              </a>
+          </p>
           <time datetime="2020-05-21 15:15"></time>        
         </footer>
       </article>
@@ -168,7 +169,49 @@
       </div>
     </section>
   </main>
-
+  <aside class="c-sidebar"><!--Sidebar e menu de navegação do site-->
+    <div class="c-info-card">
+      <figure>
+        <img src="img/info-card.png" alt="Esta é a minha foto pessoal ">
+        <figcaption>Antônio Alberto C.J. foto escolhida para fazer parte do card principal</figcaption>
+      </figure>
+      <h3>Antônio Alberto</h3>
+      <h4>Estudante de Análise e Desenvolvimento de Sistemas,</h4>
+      <h4>Auxíliar Administrativo</h4>
+    </div>
+    <nav class="c-main-menu">
+      <ul class="c-main-menu__list">
+        <li><a class="c-main-menu__link" href="#l-header"><i class="fas fa-house-user"></i>Home</a></li>
+        <li><a class="c-main-menu__link" href="#l-about"><i class="fas fa-info-circle"></i>Sobre</a></li>
+        <li><a class="c-main-menu__link" href="#l-skills"><i class="fas fa-wrench"></i>Competências</a></li>
+        <li><a class="c-main-menu__link" href="#l-contact"><i class="fas fa-user-astronaut"></i>Contato</a></li>
+      </ul>
+    </nav>
+    <div class="c-social">
+      <ul class="c-main-menu__list">
+        <li>
+          <a class="c-main-menu__link" href="https://www.facebook.com/profile.php?id=100007562955556" target="_blank" rel="rel=noopener">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="c-main-menu__link" href="https://www.instagram.com/antonioal97/?hl=pt-br" target="_blank" rel="rel=noopener">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="c-main-menu__link" href="https://www.linkedin.com/in/ant%C3%B4nio-alberto-aa8501185/" target="_blank" rel="rel=noopener">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="c-main-menu__link" href="https://github.com/antonioal97" target="_blank" rel="rel=noopener">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside><!--Fim da sidebar e menu-->
   <footer class="l-footer">
     <p>Copyright &copy; Antônio Alberto</p>
     <p>Since 2020</p>

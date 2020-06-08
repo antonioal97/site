@@ -1,48 +1,45 @@
 // ==========================================================================
 // Colors
 // ==========================================================================
-
 $project-colors: (
-  //-> al97 é só uma básica abreviação que gosto do meu nome e data de nascimento.
-  //Nada especifico, como é um projeto pessoal, nada impede de utilizar.
-  'p-primary'  : #2EB0E5,
-  'p-secondary': #4285F4,
-  'p-white'    : #EBEBE3,
-  'p-black'    : #1D1F21,
-  'p-dark'     : #1F2020,
-);
-$colorActions: (
-  //Cores de botões confirmar excluir etc etc:)
-  'btn-success'  : #3cc368,
-  'btn-warning'  : #f5a600,
-  'btn-error'    : #ec5840,
-);
-$c-white: (
+  brand:  (
+    primary  : #2EB0E5,
+    secondary: #243BF1,
+    light    : #E4F2FB,
+  ),
+  element: (
+    e-base     : #6AC7ED,
+    e-main     : #2EB0E5,
+    e-accent   : #ABE0F5,
+    e-black    : #141F26,
+    e-dark     : #14141C,
+  ),
+  harmo: (
+    h-base     : #84D1F0,
+    h-main     : #2EB0E5,
+    h-accent-1 : #E52E66,
+    h-accent-2 : #E5D02E,
+  ),
+  light: (
   //Gradiente básico que pode ser possivelmente usado
-  'w-white-1 '  : #C0C0B9,
-  'w-white-2'   : #969691,
-  'w-white-3'   : #6E6E6B,
-  'w-white-4'   : #494947,
-  'w-invert'    : #14141C,
-);
-$social-media-colors: (
-  //Coloração das midias sociais
-  'facebook'  : #3b5998,
-  'twitter'   : #00aced,
-  'linkedin'  : #0077b5,
-  'youtube'   : #cd201f,
-  'instagram' : #e4405f,
-  'github'    : #333,
+    l-white-1   : #F5F5F1,
+    l-white-2   : #F3F3EE,
+    l-white-3   : #F1F1EB,
+    l-white-4   : #EFEFE8,
+    l-white-5   : #EBEBE3,
+  ),
 );
 
-
-
+@function color($color, $fill){
+    $color: map-deep-get($project-colors, $color, $fill);
+    @return $color;
+}
 
 // ==========================================================================
 // As medidas utilizadas no projeto (gera uma melhor padronização)
 // ==========================================================================
 
-$global-max-width-raw: 780;
+$global-max-width-raw: 720;
 $global-max-width    : rem($global-max-width-raw);
 
 $global-font-size  : rem(18);
@@ -54,7 +51,7 @@ $global-module-size: rem(30);
 // Transitions
 // ==========================================================================
 
-$transition-duration         : 305ms;
+$transition-duration         : 650ms;
 $transition-duration-complex : 385ms;
 $transition-duration-entrance: 235ms;
 $transition-duration-exit    : 205ms;
@@ -67,7 +64,6 @@ $transition-function-ease-out-back    : cubic-bezier(.175, .885, .32, 1.275);
 $transition-function-ease-in-out-circ : cubic-bezier(.785, .135, .15, .86);
 $transition-function-ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
 $transition-function-elastic          : cubic-bezier(.175, .885, .41, 1.46);
-
 
 
 // ==========================================================================

@@ -3,28 +3,37 @@
 // ==========================================================================
 // Abstract
 // ==========================================================================
-
 @import "abstract/unit";
 @import "abstract/mixins";
 @import "abstract/variables";
 @import "abstract/breakpoint";
 @import "abstract/z-index";
 
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+ /*
 :root {
   @each $name, $color in $project-colors {
-    --color-#{$name}: #{$color};
-  }
-  @each $name, $color in $colorActions {
     --color-#{$name}: #{$color};
   }
   @each $name, $color in $c-white {
     --color-#{$name}: #{$color};
   }
+ 
+  @each $name, $color in $colorActions {
+    --color-#{$name}: #{$color};
+  }
+
   @each $name, $color in $social-media-colors {
     --color-#{$name}: #{$color};
   }
 }
-
+*/
 
 // ==========================================================================
 // Base
@@ -48,13 +57,15 @@
 // Component
 // ==========================================================================
 
+@import "component/c-wrapper";
 @import "component/c-hamburguer";
 @import "component/c-sidebar";
 @import "component/c-info-card";
 @import "component/c-main-menu";
 @import "component/c-social";
 @import "component/c-btn";
-@import "component/c-wrapper";
+@import "component/c-timeline";
+
 
 
 // ==========================================================================

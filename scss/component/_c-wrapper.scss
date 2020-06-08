@@ -7,19 +7,24 @@ $component-name: "c-wrapper";
     font-size: 18pt;
   }
   &__heading{
+    background-color:               darken(color(element,e-black),1.5px);
+    border-top:                     .5px solid color(element,e-dark);
+    border-radius:                  $global-radius;
+    font-family:                    'Raleway', sans-serif;
+    font-weight:                    700;
     font-size:                      24pt;
     text-align:                     center;
     padding:                        rem(5);
-    width:                          fit-content;
-    margin:                         0 auto rem(15) auto;
+    width:                          100%;
+    margin:                         0 auto;
     h2{
-      @include                      transparent-text(#FA8072,darken(#FA8072,15%),darken(#FA8072,20%));
+      @include                      transparent-text(color(harmo,h-accent-2),color(harmo,h-accent-1),darken(color(harmo,h-accent-1),5%));
       position:                     relative;
       margin-bottom:                rem(10);
     }
     h4{
-      font-family: 'Raleway', sans-serif;
-      @include                      transparent-text (#2EB0E5,#418FF1,#4285F4);
+      font-size:                    12pt;
+      @include                      transparent-text (color(brand,primary),color(brand,secondary),darken(color(brand,secondary),5%));
     }
     @include breakpoint(large-up){
       font-size:                     32pt;
