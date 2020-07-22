@@ -1,0 +1,70 @@
+$component-name: 'title';
+
+.c-#{$component-name},
+.c-sub#{$component-name}{
+  font-family: 'Courier New', Courier, monospace;
+}
+.c-#{$component-name}{
+  font-weight: bold;
+  font-size: 18px;
+}
+.c-sub#{$component-name}{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+h1.c-#{$component-name}{
+  //background-color: red;
+  font-size:                      3.375em;
+  font-weight:                    700;
+}
+h2.c-sub#{$component-name}{
+  //background-color: blue;
+  font-size:                      1.2655em;
+}
+h2.c-#{$component-name}{
+  //background-color: red;
+  font-size:                      2.2em;
+  font-weight:                    700;
+  //text-shadow: .3px .5px 2px #141414;
+}
+
+h4.c-sub#{$component-name}{
+  font-size: 1.4em;
+  font-weight: 300;
+  //background-color: goldenrod;
+}
+/*
+@include breakpoint(small-up){
+  //----------------------------------
+  //  @Títulos h1 e h2
+  //----------------------------------
+  h1.c-#{$component-name}{
+    background-color: salmon;
+    font-size:                      3.375em;
+    font-weight:                    700;
+    
+  }
+  h2.c-#{$component-name}{
+    background-color: red;
+    font-size:                      3.375em;
+    font-weight:                    700;
+  }
+  h2.c-sub#{$component-name}{
+    background-color: lighten(salmon,5px);
+    font-size:                      2.531em;
+  }
+  
+  /*----------------------------------
+  //  @Títulos h3 e h4
+  //----------------------------------
+  h3.c-#{$component-name}{
+    background-color: yellow;
+  }
+  h4.c-sub#{$component-name}{
+    background-color: green;
+    font-size: 2.25em;
+  }
+}
+*/

@@ -1,0 +1,17 @@
+$component-name: 'c-socialList';
+
+.#{$component-name}{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  & > li{
+    list-style: none;
+    margin: 0 rem(5.5) 0 rem(5.5);
+  }
+  .c-iconized{
+    width: rem(26);
+    svg{
+      fill: currentColor;
+    }
+  }
+}

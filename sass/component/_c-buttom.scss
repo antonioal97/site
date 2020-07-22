@@ -1,0 +1,9 @@
+$component-name: 'c-buttom';
+
+.#{$component-name}{
+  color: currentColor;
+  cursor: pointer;
+  display: block;
+  padding: rem(10) rem(20);
+  text-decoration: none;
+}

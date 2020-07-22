@@ -1,0 +1,18 @@
+$component-name: "c-link";
+
+.#{$component-name}{
+  color: var(--color-alternative);
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  &::after{
+    @include bgGradient(#2EB0E5,linear,7px,right);
+    @include pseudo;
+    border-radius: $global-radius;
+    bottom: -5px;
+    height: 3px;
+    left: 0;
+    width: 97%;
+  }
+}

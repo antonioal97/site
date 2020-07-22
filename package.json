@@ -1,11 +1,11 @@
 {
-  "name": "imersaocss",
-  "version": "1.0.0",
+  "name": "Meu site pessoal",
+  "version": "2.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch scss/style.scss:css/style.css --style compressed"
+    "start": "sass --watch sass/style.scss:css/style.css --style compressed"
   },
   "keywords": [],
   "author": "",

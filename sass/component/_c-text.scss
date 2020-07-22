@@ -1,0 +1,21 @@
+$component-name: 'c-text';
+
+p.#{$component-name}{
+  font-family:          Ubuntu, sans-serif;
+  font-size:            $global-font-size;
+  font-weight:          300;
+  letter-spacing:       1.7px;
+  line-break:           loose;
+  line-height:          $global-line-height;
+  max-width:            80ch;
+  text-align:           justify;
+  text-indent:          rem(15); 
+  white-space:          wrap;  
+
+  &::selection{
+    background-color: var(--color-text);
+  }
+  @include breakpoint(small-up){
+    font-size:          initial;
+  }
+}

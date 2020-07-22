@@ -1,0 +1,18 @@
+$component-name: 'c-tag';
+
+.#{$component-name}{
+  background-color: var(--color-background); //#141F26
+  border-radius: $global-radius;
+  color: var(--color-text); //#E4F2FB
+  font-size: large;
+  font-weight: 600;
+  padding: $global-module-size / 6 $global-module-size / 2;
+  span{
+    font-family: 'Arial Narrow',sans-serif;
+  }
+  svg{
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 5px;
+  }
+}

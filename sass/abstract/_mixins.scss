@@ -29,3 +29,21 @@
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+@mixin bgGradient($cor,$expo,$distance,$direction: false){
+  $color: $cor;
+  $move: "";
+
+  $dist1: ($distance * 2);
+  $dist2: ($distance * 3);
+
+
+  $c2: lighten($cor, $dist1);
+  $c3: lighten($cor, $dist2);
+  @if $direction{
+    $move: $direction;
+    background-image: #{$expo}-gradient(
+    to $move, $cor, $c2, $c3);
+  }@else{
+    background-image: #{$expo}-gradient($cor, $c2, $c3);
+  }
+}

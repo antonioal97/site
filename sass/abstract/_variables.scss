@@ -1,33 +1,12 @@
 // ==========================================================================
 // Colors
 // ==========================================================================
-$project-colors: (
-  brand:  (
-    primary  : #2EB0E5,
-    secondary: #243BF1,
-    light    : #E4F2FB,
-  ),
-  element: (
-    e-base     : #6AC7ED,
-    e-main     : #2EB0E5,
-    e-accent   : #ABE0F5,
-    e-black    : #141F26,
-    e-dark     : #14141C,
-  ),
-  harmo: (
-    h-base     : #84D1F0,
-    h-main     : #2EB0E5,
-    h-accent-1 : #E52E66,
-    h-accent-2 : #E5D02E,
-  ),
-  light: (
-  //Gradiente básico que pode ser possivelmente usado
-    l-white-1   : #F5F5F1,
-    l-white-2   : #F3F3EE,
-    l-white-3   : #F1F1EB,
-    l-white-4   : #EFEFE8,
-    l-white-5   : #EBEBE3,
-  ),
+$project-colors: (  
+    alternative  : #2EB0E5,
+    elements     : #243BF1,
+    text         : #E4F2FB,
+    textLight    : #e4f2fbcc,
+    background   : #192734,
 );
 
 @function color($color, $fill){
@@ -42,8 +21,8 @@ $project-colors: (
 $global-max-width-raw: 720;
 $global-max-width    : rem($global-max-width-raw);
 
-$global-font-size  : rem(18);
-$global-line-height: 1.5;
+$global-font-size  : rem(14);
+$global-line-height: 1.7;
 $global-radius     : rem(6);
 $global-module-size: rem(30);
 
