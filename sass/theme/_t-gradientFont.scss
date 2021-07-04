@@ -1,5 +1,0 @@
-$component-name: 't-gradientFont';
-
-.#{$component-name}{
-  @include transparent-text( #e6abff,darken(#6dc7ff, 12px),#6dc7ff);
-}
