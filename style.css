@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;1,300&family=Raleway:wght@700&display=swap");
+:root {
+  --color-gray-clear-01: #C0C8C5;
+  --color-gray-clear-02: #DAE2DE;
+  --color-gray-clear-03: #F0FFF8;
+  --color-gray-dark-01: #1A1F1D;
+  --color-gray-dark-02: #272C2A;
+  --color-gray-dark-03: #303633;
+  --color-primary: #1DED91;
+  --color-light: #8AFFCB; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline-offset: 0.25rem; }
+
+h1, h2, h3 {
+  font: normal 100%/ 100% 'Raleway', sans-serif;
+  color: var(--color-gray-clear-03); }
+
+img {
+  max-width: 100%; }
+
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  height: auto;
+  max-width: none;
+  width: 100%; }
+
+a {
+  color: inherit;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none; }
+
+body {
+  background-color: var(--color-gray-dark-01);
+  color: var(--color-gray-clear-01);
+  font-family: 'JetBrains Mono', monospace;
+  font-style: italic;
+  font-size: 1rem; }
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; }
