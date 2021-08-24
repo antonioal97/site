@@ -1,0 +1,31 @@
+$element-name: 'c-button';
+
+.#{$element-name},
+.#{$element-name}--clean{
+    border-radius: $global-radius;
+    display: flex;
+    font-family: var(--font-title);
+    font-size: $global-font-size;
+    font-style: normal;
+    gap: rem(30) / 2;
+    align-items: center;
+    padding: rem(10) rem(20);
+    width: fit-content;
+    transition: background-color 350ms, border-color 350ms;
+}
+
+.#{$element-name}{
+    color: var(--color-dark-01);
+    background-color: var(--color-primary);
+
+    &:hover{
+        background-color: var(--color-primary-light);
+    }
+}
+
+// .#{$element-name}--clean{
+//     border: 2px solid transparent;
+//     &:hover{
+//         border: 2px solid var(--color-dark-03);
+//     }
+// }

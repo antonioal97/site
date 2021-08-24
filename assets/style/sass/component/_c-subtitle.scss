@@ -1,0 +1,15 @@
+$element-name: 'c-subtitle';
+
+.#{$element-name} {
+    color: var(--color-light-01);
+    font-size: rem(10.67);
+    
+    &::after{
+        content: '';
+        margin: 10px 0 15px 0;
+        display: block;
+        background-color: var(--color-primary);
+        height: rem(.5);
+        width: rem(40);
+    }
+}

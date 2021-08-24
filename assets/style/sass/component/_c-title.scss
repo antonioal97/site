@@ -1,0 +1,9 @@
+$element-name: "c-title";
+
+.#{$element-name}{
+    color: var(--color-light-03);
+    font-family: var(--font-title);
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(24);
+}

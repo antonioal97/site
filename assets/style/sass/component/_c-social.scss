@@ -1,0 +1,28 @@
+$element-name: 'c-social';
+
+.#{$element-name}{
+    display: flex;
+    gap: $global-module-size;
+    width: fit-content;
+    border-top: 1px solid var(--color-dark-02);
+    padding-top: 30px;
+    &__item{
+        display: flex;
+        align-items: center;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: rem(7);
+            background-color: var(--color-primary);
+            height: rem(7);
+            border-radius: 50%;
+            margin-right: rem(15);
+        }
+    }
+
+    &__link{
+        &:hover{
+            color: var(--color-light-03);
+        }
+    }
+}

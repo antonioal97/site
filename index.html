@@ -1,80 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1, 2, 3 Testando</title>
-    <link rel="stylesheet" href="./assets/style/css/style.css">
+    <title>Antônio Alberto | Desenvolvedor Front-end & UI Design</title>
+    <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
+
 <body>
-    <header class="l-header" id="home">
+    <header class="c-wrapper">
         <nav class="c-menu">
             <ul class="c-menu__left">
-                <li class="c-menu__item"><a href="#home" class="c-menu__link">Home</a></li>
-                <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+                <li class="c-menu__item">
+                    <a href="#" class="is-active">Home</a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="#">About</a>
+                </li>
             </ul>
-            <a href="http://" target="_blank" rel="noopener noreferrer" class="c-logo"><img src="" alt="" srcset=""></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="c-logo">
+                LogoTipo
+            </a>
             <ul class="c-menu__right">
-                <li class="c-menu__item"><a href="#home" class="c-menu__link">Services</a></li>
-                <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+                <li class="c-menu__item">
+                    <a href="#">Services</a>
+                </li>
+                <li class="c-menu__item">
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
-        <hr class="c-divider">
-        <div class="c-landing-text">
-            <h2 class="c-subtitle">Hey there, welcome</h2>
-            <h1 class="c-title">I'm Antônio Alberto</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae aut consequuntur tempora nisi eos praesentium rem natus, dolorem facilis. Iusto corporis sed dicta. Natus optio, consequatur maiores harum sed aliquam.
-            </p>
-            <div class="c-cta">
-                <a href="#services" class="c-button">Serviços -></a>
-                <a href="#services" class="c-button--clean">Download CV</a>
-            </div>
-            <ul class="c-social">
-                <li class="c-social__item">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="c-social__link">
-                        Instagram
-                    </a>
-                </li>
-                <li class="c-social__item">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="c-social__link">
-                        Github
-                    </a>
-                </li>
-                <li class="c-social__item">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="c-social__link">
-                        Linkedin
-                    </a>
-                </li>
-            </ul>
-        </div>
-    
-        <div class="c-profile-pic">
-            <img src="./assets/media/img/01.png" alt="Este sou eu, e você pode me conhecer melhor ou solicitar mais serviços através das minhas redes sociais!">
-        </div>
     </header>
 
-    <main>
-        <section class="about">
-            <div class="c-wrapper">
-                <article>
-                    <div class="c-headline">
-                        <h2 class="c-subtitle">
-                            About me
-                        </h2>
-                        <p class="c-title">
-                            Hi it's me. I'm here to help you in your project
-                        </p>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum distinctio voluptatum nisi? Dolorem nobis ducimus quibusdam iste necessitatibus iusto doloribus omnis sint eos numquam culpa, cupiditate esse laborum, aspernatur reiciendis!
-                    </p>
-                    
-                </article>
+    <main class="c-wrapper">
+        <hr class="c-divider">
+        <section class="l-home" id="home">
+            <article class="c-content">
+                <header class="c-headline">
+                    <h2 class="c-subtitle">Hey there, welcome</h2>
+                    <h1 class="c-title">I'm Antônio Alberto</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium repellat vero ducimus error
+                    voluptatibus accusamus, sequi delectus aperiam mollitia quod nostrum?
+                </p>
+                <div class="c-call-to-action">
+                    <a class="c-button" href="#">
+                        Serviços
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="c-button--clean">
+                        Saiba mais <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                <ul class="c-social">
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                </ul>
+            </article>
+            <div class="c-profile-image">
+                <img src="./assets/img/profile-image.png"
+                    alt="Este sou eu! E você pode ver mais sobre mim através das minhas redes sociais!">
             </div>
         </section>
+        <hr class="c-divider">
+        <section class="l-about" id="about">
+            <div class="c-gallery">
+                <img src="https://source.unsplash.com/random" alt="" srcset="">
+                <img src="https://source.unsplash.com/random" alt="" srcset="">
+                <img src="https://source.unsplash.com/random" alt="" srcset="">
+                <img src="https://source.unsplash.com/random" alt="" srcset="">
+            </div>
+
+            <article class="c-content">
+                <header class="c-headline">
+                    <h2 class="c-subtitle">Um pouco sobre mim</h2>
+                    <h1 class="c-title">Hi, its me! I'm here to help you in a project</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ullam magnam mollitia officia
+                    numquam ipsam rerum? Sit ratione, laborum suscipit incidunt quidem nisi. Animi eligendi repudiandae
+                    aut velit. Impedit, enim!
+                </p>
+                <dl>
+                    <dt>Soft Skills</dt>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                </dl>
+                <dl>
+                    <dt>Hard Skills</dt>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                    <dd>Skill aleatório</dd>
+                </dl>
+                <div class="c-call-to-action">
+                    <a class="c-button" href="#">Serviços -></a>
+                    <a href="#" class="c-button--clean">Download C.V.</a>
+                </div>
+            </article>
+        </section>
+        <hr class="c-divider">
+        <section class="l-services" id="services">
+            <article class="c-content">
+                <header class="c-headline">
+                    <h2 class="c-subtitle">Um pouco sobre mim</h2>
+                    <h1 class="c-title">Hi, its me! I'm here to help you in a project</h1>
+                </header>
+                <ul class="c-service__list">
+                    <li class="c-service">
+                        <span class="c-icon">
+                            <i class="fab fa-figma"></i>
+                            <p class="c-subtitle">Prototipação</p>
+                        </span>
+                        <div class="c-service__definition">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis aliquam repudiandae,
+                        </div>
+                        <a href="#" class="c-button--link">Entre em contato</a>
+                    </li>
+                </ul>
+                <div class="c-modal">
+                    <p class="c-modal__content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat fuga voluptatibus eaque, officia inventore
+                    </p>
+                </div>
+            </article>
+        </section>
+        <hr class="c-divider">
+        <section class="l-contact" id="contact">
+            <article class="c-content">
+                <header class="c-headline">
+                    <h2 class="c-subtitle">Contact me for more infos</h2>
+                    <h1 class="c-title">Hey, send a message to me from more infos!</h1>
+                </header>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem adipisci qui perferendis quidem, fuga minus omnis libero,
+                </p>
+                <form action="/">
+                    <label for="client-name">
+                        <input type="text" name="cliente-name" id="client-name">
+                    </label>
+                    <label for="client-message">
+                        <input type="text" name="cliente-message" id="client-message">
+                    </label>
+                    <button type="submit" class="c-button">Enviar e-mail</button>
+                </form>
+                <ul class="c-social">
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                    <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="c-social__link">Rede Social</a></li>
+                </ul>
+            </article>
+            <div class="c-map"><img src="./" alt="This is my country, my city" srcset=""></div>
+        </section>
     </main>
-    
+    <hr class="c-divider">
+    <footer>
+        <div>
+            <h1 class="c-title">Antônio Alberto</h1>
+            <p>
+                Desenvolvido com 💚 por Antônio Alberto. Desde 2019.
+            </p>
+        </div>
+        <div>
+            <p class="c-subtitle">Hello World</p>
+            <p>Obrigado por ter chego até aqui! Você pode me enviar um e-mail a qualquer momento para conversarmos!</p>
+            <form action="/">
+                <label for="client-name">
+                    <input type="text" name="cliente-name" id="client-name">
+                </label>
+                <label for="client-message">
+                    <input type="text" name="cliente-message" id="client-message">
+                </label>
+                <button type="submit" class="c-button">Enviar e-mail</button>
+            </form>
+        </div>
+        <div>
+            <p class="c-subtitle">Links Úteis <i class="fas fa-external-link-alt"></i></p>
+            <p>Fique por dentro das minhas novidades, me siga nas redes sociais para conteúdos ou futuras contratações</p>
+            <ul class="c-social">
+                <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                        class="c-social__link">Rede Social</a></li>
+                <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                        class="c-social__link">Rede Social</a></li>
+                <li class="c-social__item"><a href="http://" target="_blank" rel="noopener noreferrer"
+                        class="c-social__link">Rede Social</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
