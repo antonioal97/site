@@ -1,8 +1,0 @@
-$element-name: 'c-call-to-action';
-
-.#{$element-name}{
-    @include flex;
-    align-items: center;
-    gap: $global-module-size;
-    margin: rem(30) 0 rem(90) 0;
-}
