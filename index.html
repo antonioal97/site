@@ -168,9 +168,9 @@
                         <h1 class="title">Vamos conversar um pouco mais, me envie um e-mail</h1>
                     </header>
                     <form action="">
-                        <input type="text" name="" id="name" placeholder="Seu nome aqui!">
-                        <input type="text" name="" id="message" placeholder="A sua mensagem vai aqui `.´">
-                        <input type="button" value="Enviar" class="button">Enviar</input>
+                        <input class="input" type="text" name="" id="name" placeholder="Seu nome aqui!">
+                        <input class="input" type="text" name="" id="message" placeholder="A sua mensagem vai aqui `.´">
+                        <input type="button" value="Enviar" class="button"></input>
                     </form>
                 </div>
                 <img src="./assets/img/map.png" alt="" srcset="" class="map">
@@ -178,7 +178,7 @@
         </section>
     </main>
 
-    <footer class="wrapper">
+    <footer class="wrapper footer">
         <div>
             <h2 class="subtitle">Antônio Alberto</h2>
             <p class="paragraph">Desenvolvido com carinho por mim mesmo!</p>
@@ -186,7 +186,10 @@
         <div>
             <p class="subtitle">Hello world</p>
             <p class="paragraph">Você pode me enviar uma mensagem também</p>
-            <input type="text" name="" id="footer-message" class="message"><input type="button" value="Enviar">Enviar</input>
+            <form action="/" method="get">
+                <input class="input" type="text" name="" id="footer-message" class="message" placeholder="Sua mensagem aqui">
+                <input class="button" type="button" value="Enviar"></input>
+            </form>
 
         </div>
         <div>
