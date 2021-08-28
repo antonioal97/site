@@ -46,9 +46,16 @@ h2{
   font-size: 100%;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 article{
   align-items: center;
   display: flex;
+  /* flex-wrap: wrap; */
   gap: calc(var(--module-size) * 2);
   justify-content: center;
   padding: 90px 30px;
@@ -92,9 +99,10 @@ article{
 .button,
 .button--as-link{
   display: flex;
+  font-size: 18px;
   gap: calc(var(--module-size) / 2);
   align-content: center;
-
+  transition: background-color 300ms ease-in, border-color 300ms ease-in, color 300ms ease-in;
 }
 
 .button{
@@ -103,11 +111,19 @@ article{
   border-radius: var(--default-radius);
   padding: 10px 50px;
   color: var(--dark-03);
-  transition: background-color 300ms ease-in;
 }
-
+  
 .button:hover{
   background: var(--primary-light);
+}
+
+/* .button--as-link{
+  border-bottom: dotted 6px var(--light-01);
+  padding-bottom: 5px;
+} */
+
+.button--as-link:hover{
+  color: var(--primary);
 }
 
 
@@ -265,11 +281,13 @@ h2.paragraph{
 }
 
 .service{
-  display: inherit;
+  display: grid;
+  grid-template-columns: 25% 1fr auto ;
+  /* justify-items: center; */
   align-items: center;
-  justify-content: space-between;
   position: relative;
   padding: var(--module-size);
+  gap: var(--module-size);
 }
 
 .service::before{
@@ -283,14 +301,13 @@ h2.paragraph{
 }
 
 .service .icon{
-  display: inherit;
-  align-items: inherit;
+  /* display: inherit; */
+  display: flex;
+  align-items: center;
   gap: var(--module-size);
-  min-width: 25%;
-  padding-right: var(--module-size);  
 }
 
-.icon i{
+.icon__background{
   background: var(--dark-03);
   width: 64px;
   height: 64px;
@@ -299,6 +316,21 @@ h2.paragraph{
   border-radius: 12px;
 /*  vertical-align: middle;*/
 }
+
+/* 
+
+  Contact
+
+*/
+
+.contact{
+  background: var(--dark-01);
+}
+
+.map{
+  width: 100%;
+}
+
 
 
 /* 

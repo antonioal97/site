@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/style.css">
-    <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymo
-us"></script>
+    <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="wrapper">
@@ -56,7 +55,7 @@ us"></script>
                             <a href="#" class="button">Serviços</a>
                             <a href="" class="button--as-link">
                                 Saiba mais
-                                <!-- <i class="fas fa-arrow-down"></i> -->
+                                <i class="fas fa-chevron-down"></i>
                             </a>
                         </div>
                     </footer>
@@ -98,12 +97,11 @@ us"></script>
                         <div class="call-to-action">
                             <a href="#" class="button">
                                 Contato
-                                <!-- <i href="" class="button--as-link"> -->
                             </a>
                             </a>
                             <a href="#" class="button--as-link">
                                 Download CV
-                                <i class="fas fa-file-download"></i>
+                                <i class="fas fa-arrow-down"></i>
                             </a>
                         </div>
                     </footer>
@@ -125,7 +123,9 @@ us"></script>
                     <ul class="services">
                         <li class="service">
                             <span class="icon">
-                                <i class="fab fa-figma"></i>
+                                <div class="icon__background">
+                                    <img src="./assets/img/services/figma.svg" alt="">
+                                </div>
                                 <p class="subtitle">Ui Design</p>
                             </span>
                             <p class="paragraph">Protótipos reais, o que você sonha para o site da sua empresa pode virar realidade!</p>
@@ -133,7 +133,9 @@ us"></script>
                         </li>
                         <li class="service">
                             <span class="icon">
-                                <i class="fab fa-terminal"></i>
+                                <div class="icon__background">
+                                    <img src="./assets/img/services/terminal.svg" alt="">
+                                </div>
                                 <p class="subtitle">Criação de website</p>
                             </span>
                             <p class="paragraph">Websites funcionais para você que deseja inserir sua empresa no mercado web.</p>
@@ -141,7 +143,9 @@ us"></script>
                         </li>
                         <li class="service">
                             <span class="icon">
-                                <i class="fab fa-desktop"></i>
+                                <div class="icon__background">
+                                    <img src="./assets/img/services/fe_sync.svg" alt="">
+                                </div>
                                 <p class="subtitle">Manutenção</p>
                             </span>
                             <p class="paragraph">Uma empresa não pode ficar sem um computador, tanto quanto alguém não pode ficar sem o coração!</p>
@@ -157,8 +161,7 @@ us"></script>
         <hr class="divider">
 
         <section class="contact" id="contact">
-            <article>
-                <img src="./assets/img/map.png" alt="" srcset="" class="map">
+            <article class="wrapper">
                 <div class="content">
                     <header class="headline">
                         <h2 class="subtitle">Entre em contato comigo</h2>
@@ -170,6 +173,7 @@ us"></script>
                         <input type="button" value="Enviar" class="button">Enviar</input>
                     </form>
                 </div>
+                <img src="./assets/img/map.png" alt="" srcset="" class="map">
             </article>
         </section>
     </main>
@@ -198,5 +202,6 @@ us"></script>
             </ul>
         </div>
     </footer>
+    <script src="./assets/index.js"></script>
 </body>
 </html>
