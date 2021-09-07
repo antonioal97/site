@@ -1,0 +1,15 @@
+$component-name: 'clr-dev';
+
+.#{$component-name}{
+    background: var(--dev-default);
+    color: var(--dev-03);
+
+    &:hover{
+        background: var(--dev-00);
+    }
+
+    &:active{
+        background: var(--dev-03);
+        color: var(--dev-00);
+    }
+}

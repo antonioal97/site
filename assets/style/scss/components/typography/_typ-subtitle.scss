@@ -1,0 +1,11 @@
+$component-name: 'typ-subtitle';
+
+.#{$component-name}{
+    color: var(--gray-03);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 35px;
+    overflow: hidden;
+    position: relative;
+}

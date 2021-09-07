@@ -1,0 +1,22 @@
+$component-name: 'skills-list';
+$component-child: 'skill';
+
+.#{$component-name}{
+    align-items: flex-start;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 90px 0;
+};
+
+.#{$component-child}{
+    display: inherit;
+    flex-direction: column;
+    flex: 0 1 370px;
+    gap: 15px;
+    &__icon{
+        color: var(--primary-default);
+        display: block;
+        font-size: 32px;
+    }
+}

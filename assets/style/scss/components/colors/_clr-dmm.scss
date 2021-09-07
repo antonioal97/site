@@ -1,0 +1,15 @@
+$component-name: 'clr-DMM';
+
+.#{$component-name}{
+    background: var(--DMM-default);
+    color: var(--DMM-03);
+
+    &:hover{
+        background: var(--DMM-00);
+    }
+
+    &:active{
+        background: var(--DMM-03);
+        color: var(--DMM-00);
+    }
+}

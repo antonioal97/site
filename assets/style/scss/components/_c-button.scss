@@ -1,0 +1,12 @@
+$component-name: 'c-button';
+
+.#{$component-name},
+.#{$component-name}--as-link{
+    align-items: center;
+    border-radius: $global-radius;
+    color: currentColor;
+    display: flex;
+    gap: $global-gap;
+    padding: 15px 30px;
+    text-decoration: none;
+}
