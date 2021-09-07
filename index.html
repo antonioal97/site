@@ -1,210 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antõnio Alberto | Desenvolvedor front end & UI Designer</title>
+    <link rel="stylesheet" href="./assets/style/scss/style.css" />
     <script src="https://kit.fontawesome.com/744674e787.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="wrapper">
-        <nav class="menu">
-            <ul class="menu__left">
-                <li class="menu__item">
-                    <a class="is-active menu__link" href="#">
-                        Home
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">
-                        About
-                    </a>
-                </li>
-            </ul>
-            <a href="#" class="logo">Logotipo</a>
-            <ul class="menu__right">
-                <li class="menu__item">
-                    <a class="menu__link" href="#">
-                        Serviços
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">
-                        Contato
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <hr class="divider">
+    
+  </head>
+  <body>
+    <header class="l-header c-wrapper">
+      <nav class="c-menu typ-body">
+        <ul class="c-menu__left">
+          <li class="c-menu__item">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-menu__link typ-separator--before"
+            >Home</a>
+          </li>
+          <li class="c-menu__item">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-menu__link"
+            >Sobre mim</a>
+          </li>
+        </ul>
+        <ul class="c-menu__right">
+          <li class="c-menu__item">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-menu__link"
+            >Serviços</a>
+          </li>
+          <li class="c-menu__item">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-menu__link"
+            >Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <!--  -->
-    <main>
-        <section class="home" id="home">
-            <article>
-                <div class="content">
-                    <header class="headline">
-                        <p class="subtitle">Olá, seja bem vindo</p>
-                        <h1 class="title">Eu sou o <br/>Antônio Alberto</h1>
-                        <h2 class="paragraph">Dev Front End, UI Designer</h2>
-                    </header>
-                    <p class="paragraph">Empresas são sistemas vivos, entender essa dinâmica cria um colaborar funcional</p>
-                    <footer class="footnote">
-                        <div class="call-to-action">
-                            <a href="#" class="button">Serviços</a>
-                            <a href="" class="button--as-link">
-                                Saiba mais
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </div>
-                    </footer>
-                    <ul class="social">
-                        <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                        <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                        <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                    </ul>
-                </div>
-                <img src="./assets/img/profile-image.png" alt="Este sou eu!" srcset="">
-            </article>
-        </section>
-        
-        <hr class="divider">
+    <hr class="c-divider">
+    <section class="l-hero c-wrapper" id="home">
+        <p class="typ-body">👋 Antônio Alberto</p>
+        <h1 class="typ-title typ-separator--after">
+            UI Design
+            <span class="typ-subtitle">&</span><br>
+            Front-end Dev 
+        </h1>
+        <p class="typ-body">Seja bem vindo ao meu website, é um prazer ter você aqui</p>
 
-        <section class="about" id="about">
-            <article class="wrapper">
-                <div class="gallery">
-                    <img src="https://source.unsplash.com/random/225x300" alt="" srcset="" class="gallery__item">
-                    <img src="https://source.unsplash.com/random/225x300" alt="" srcset="" class="gallery__item">
-                    <img src="https://source.unsplash.com/random/225x300" alt="" srcset="" class="gallery__item">
-                    <img src="https://source.unsplash.com/random/225x300" alt="" srcset="" class="gallery__item">
-                </div>
-                <div class="content">
-                    <header class="headline">
-                        <h2 class="subtitle">Um pouco sobre mim</h2>
-                        <h1 class="title">Conheça um pouco mais sobre quem eu sou</h1>
-                    </header>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere recusandae magnam dolore reiciendis laboriosam libero dicta? Fugit nam magni dignissimos voluptatibus minus amet, illo, consectetur itaque sapiente optio ipsa fugiat!
-                    </p>
-                    <dl>
-                        <dt>Soft skills</dt>
-                        <dd>Lorem ipsum dolor sit,</dd>
-                        <dd>Lorem ipsum dolor sit,</dd>
-                        <dd>Lorem ipsum dolor sit,</dd>
-                    </dl>
-                    <footer class="footnote">
-                        <div class="call-to-action">
-                            <a href="#" class="button">
-                                Contato
-                            </a>
-                            </a>
-                            <a href="#" class="button--as-link">
-                                Download CV
-                                <i class="fas fa-arrow-down"></i>
-                            </a>
-                        </div>
-                    </footer>
-                </div>
-            </article>
-        </section>
-
-        <hr class="divider">
-
-        <section class="services" id="services">
-            <article class="wrapper">
-                    <header class="headline">
-                        <h2 class="subtitle">Sou desenvolvedor Front End, UI Designer e muito mais!</h2>
-                        <h1 class="title">Estas são minhas especialidades no mundo da tecnologia</h1>
-                    </header>
-                    <p class="paragraph">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quo tempora cupiditate sit, fuga illum omnis assumenda consequuntur earum repudiandae ipsam voluptatem maiores commodi numquam, magni exercitationem voluptates quasi veniam.
-                    </p>
-                    <ul class="services">
-                        <li class="service">
-                            <span class="icon">
-                                <div class="icon__background">
-                                    <img src="./assets/img/services/figma.svg" alt="">
-                                </div>
-                                <p class="subtitle">Ui Design</p>
-                            </span>
-                            <p class="paragraph">Protótipos reais, o que você sonha para o site da sua empresa pode virar realidade!</p>
-                            <a href="#" class="button--as-link">Contratar</a>
-                        </li>
-                        <li class="service">
-                            <span class="icon">
-                                <div class="icon__background">
-                                    <img src="./assets/img/services/terminal.svg" alt="">
-                                </div>
-                                <p class="subtitle">Criação de website</p>
-                            </span>
-                            <p class="paragraph">Websites funcionais para você que deseja inserir sua empresa no mercado web.</p>
-                            <a href="#" class="button--as-link">Contratar</a>
-                        </li>
-                        <li class="service">
-                            <span class="icon">
-                                <div class="icon__background">
-                                    <img src="./assets/img/services/fe_sync.svg" alt="">
-                                </div>
-                                <p class="subtitle">Manutenção</p>
-                            </span>
-                            <p class="paragraph">Uma empresa não pode ficar sem um computador, tanto quanto alguém não pode ficar sem o coração!</p>
-                            <a href="#" class="button--as-link">Contratar</a>
-                        </li>
-                    </ul>
-                    <div class="modal">
-                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quaerat aperiam distinctio optio</p>
-                    </div>
-            </article>
-        </section>
-        
-        <hr class="divider">
-
-        <section class="contact" id="contact">
-            <article class="wrapper">
-                <div class="content">
-                    <header class="headline">
-                        <h2 class="subtitle">Entre em contato comigo</h2>
-                        <h1 class="title">Vamos conversar um pouco mais, me envie um e-mail</h1>
-                    </header>
-                    <form action="">
-                        <input class="input" type="text" name="" id="name" placeholder="Seu nome aqui!">
-                        <input class="input" type="text" name="" id="message" placeholder="A sua mensagem vai aqui `.´">
-                        <input type="button" value="Enviar" class="button"></input>
-                    </form>
-                </div>
-                <img src="./assets/img/map.png" alt="" srcset="" class="map">
-            </article>
-        </section>
-    </main>
-
-    <footer class="wrapper footer">
-        <div>
-            <h2 class="subtitle">Antônio Alberto</h2>
-            <p class="paragraph">Desenvolvido com carinho por mim mesmo!</p>
+        <div class="c-cta">
+            <a href="#contact" class="c-button typ-button clr-primary">entrar em contato</a>
+            <a href="#about" class="c-button--as-link typ-button--as-link">Saiba mais <i class="fas fa-arrow-down"></i></a>
         </div>
-        <div>
-            <p class="subtitle">Hello world</p>
-            <p class="paragraph">Você pode me enviar uma mensagem também</p>
-            <form action="/" method="get">
-                <input class="input" type="text" name="" id="footer-message" class="message" placeholder="Sua mensagem aqui">
-                <input class="button" type="button" value="Enviar"></input>
-            </form>
 
-        </div>
-        <div>
-            <span>
-                <p class="subtitle">Links úteis</p>
-                <i class="fab fas-link"></i>
-            </span>
-            <ul class="social">
-                <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-                <li class="social__item"><a href="#" target="_blank" rel="noopener noreferrer" class="social__link">Rede social</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="./assets/index.js"></script>
-</body>
+        <ul class="skills-list">
+            <li class="skill">
+                <i class="skill__icon fab fa-figma"></i>
+                <h3 class="typ-subtitle">UI Designer</h3>
+                <p class="typ-body">Muito mais do que apenas criar telinhas bonitas, cativar o usuário pela facilidade</p>
+            </li>
+            <li class="skill">
+                <i class="skill__icon fas fa-terminal"></i>
+                <h3 class="typ-subtitle">Front-end Dev</h3>
+                <p class="typ-body">Desenvolvimento de Web Sites personalizados ou não</p>
+            </li>
+            <li class="skill">
+                <i class="skill__icon fas fa-search"></i>
+                <h3 class="typ-subtitle">Analista de Sistemas</h3>
+                <p class="typ-body">Uma visão diferente que busca apresentar o máximo com o mínimo</p>
+            </li>
+        </ul>
+    </section>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
