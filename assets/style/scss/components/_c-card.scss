@@ -1,10 +1,26 @@
 $component-name: 'c-card';
 
 .#{$component-name}{
-    background: var(--dark-00);
-    border-radius: $global-radius;
-    border: 2px solid var(--dark-02);
+    background-color: var(--dark-00);
+    border-radius: 4px;
     width: 300px;
+    position: relative;
+    
+    &::after{
+        background: var(--dark-02);
+        border-radius: inherit;
+        content: "";
+        display: block;
+        height: 102%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 102%;
+        z-index: -1;
+    }
+    
+
     &__img{
         display: block;
         height: 125px;
@@ -16,6 +32,21 @@ $component-name: 'c-card';
         }
     }
     &__content{
+        position: inherit;
         padding: 27px;
+    }
+}
+
+.dev{
+    &:hover{transform: scale(1.1);}
+    .typ-subtitle{
+        &::after{
+            left: 0;
+            background: var(--dev-gradient);
+        }
+    }
+    &::after{
+        background: var(--dev-gradient);
+        &:hover{transform: scale(1.1);}
     }
 }

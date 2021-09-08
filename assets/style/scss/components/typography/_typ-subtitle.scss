@@ -6,6 +6,19 @@ $component-name: 'typ-subtitle';
     font-weight: 600;
     letter-spacing: -0.05em;
     line-height: 35px;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding-top: 15px;
     position: relative;
+    z-index: 1;
+
+    &::after{
+        background-color: currentColor;
+        border-radius: 4px;
+        content: "";
+        height: 4px;
+        left: -50px;
+        position: absolute;
+        top: 0px;
+        width: 70px;
+    }
 }
