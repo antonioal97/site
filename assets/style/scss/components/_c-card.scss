@@ -17,7 +17,7 @@ $component-name: 'c-card';
         top: 50%;
         transform: translate(-50%, -50%);
         width: 102%;
-        z-index: -1;
+        z-index: -2;
     }
     
 
@@ -34,19 +34,5 @@ $component-name: 'c-card';
     &__content{
         position: inherit;
         padding: 27px;
-    }
-}
-
-.dev{
-    &:hover{transform: scale(1.1);}
-    .typ-subtitle{
-        &::after{
-            left: 0;
-            background: var(--dev-gradient);
-        }
-    }
-    &::after{
-        background: var(--dev-gradient);
-        &:hover{transform: scale(1.1);}
     }
 }

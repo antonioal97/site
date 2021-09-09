@@ -233,6 +233,7 @@ a {
   gap: 30px;
   padding: 15px 30px;
   text-decoration: none;
+  position: relative;
 }
 
 .skills-list {
@@ -300,7 +301,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 102%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .c-card__img {
@@ -323,25 +324,6 @@ a {
 .c-card__content {
   position: inherit;
   padding: 27px;
-}
-
-.dev:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.dev .typ-subtitle::after {
-  left: 0;
-  background: var(--dev-gradient);
-}
-
-.dev::after {
-  background: var(--dev-gradient);
-}
-
-.dev::after:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .l-hero {
