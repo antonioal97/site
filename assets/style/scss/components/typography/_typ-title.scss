@@ -2,20 +2,20 @@ $component-name: 'typ-title';
 
 .#{$component-name}{
     color: var(--gray-01);
-    font-size: 48px;
-    letter-spacing: -0.02em;
+    font-size: var(--font-xl);
     font-weight: 700;
+    letter-spacing: -0.02em;
     line-height: 54px;
     position: relative;
+    margin-bottom: var(--size-sm);
 
     &::after{
+        margin: var(--size-md) 0 var(--size-lg) 0;
+        background: currentColor;
+        border-radius: 4px;
         content: "";
         display: block;
-        background: currentColor;
         height: 2px;
-        border-radius: 4px;
         width: 70px;
-        margin: 30px 0 60px 0;
-    // position: relative;
     }
 }

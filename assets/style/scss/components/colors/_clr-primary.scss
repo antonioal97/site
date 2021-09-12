@@ -1,15 +1,21 @@
 $component-name: 'clr-primary';
 
 .#{$component-name}{
-    background: var(--primary-default);
-    color: var(--primary-03);
-
+    background: var(--primary-00);
+    color: var(--dark-02);
+    
     &:hover{
-        background: var(--primary-00);
+        background: var(--primary-default);
     }
-
+    
     &:active{
         background: var(--primary-03);
-        color: var(--primary-00);
+        color: var(--dark-02);
+    }
+}
+
+.#{$component-name}--card{
+    &:hover{
+        border-image: var(--primary-gradient);
     }
 }

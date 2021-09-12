@@ -4,19 +4,20 @@ $component-child: 'skill';
 .#{$component-name}{
     align-items: flex-start;
     display: flex;
-    gap: 30px;
+    gap: var(--size-lg);
     justify-content: space-between;
-    margin: 90px 0;
+    margin: calc(var(--size-xl) * 2) auto 0 auto;
 };
 
 .#{$component-child}{
     display: inherit;
     flex-direction: column;
-    flex: 0 1 370px;
-    gap: 15px;
+    flex: 0 0 320px;
     &__icon{
         color: var(--primary-default);
-        display: block;
-        font-size: 32px;
+        font-size: var(--size-lg);
+    }
+    & p{
+        margin-top: var(--size-md);
     }
 }

@@ -48,10 +48,24 @@ $dmm: (
 // Measures
 // ==========================================================================
 
-//[ ] transformar em REM futuramente
+$globalSize: 0.5rem;
 
-$global-font-size: 18px;
+$space: (
 
-$global-gap: 30px;
+    'sm'    : $globalSize, // Extra small 8px
+    'md'    : $globalSize * 2, //medium 16px
+    'lg'    : $globalSize * 4, //large 32px
+    'xl'    : $globalSize * 8, //Extra large 64px
+
+);
+
+
+$fontSize: (
+
+    'md'    : $globalSize * 2, //medium 16px   
+    'lg'    : $globalSize * 3, //large 24px
+    'xl'    : $globalSize * 6, //large 48px
+
+);
 
 $global-radius: 4px;

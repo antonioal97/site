@@ -19,6 +19,14 @@
     @each $name, $DMM in $dmm {
         --DMM-#{$name}: #{$DMM};
     }
+
+    @each $name, $size in $space {
+        --size-#{$name}: #{$size};
+    }
+
+    @each $name, $font in $fontSize{
+        --font-#{$name}: #{$font};
+    }
 }
 
 @import "./base/elements";
