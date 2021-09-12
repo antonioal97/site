@@ -4,5 +4,5 @@ $component-name: 'c-cta';
     display: flex;
     justify-content: space-between;
     width: max-content;
-    gap: 32px;
+    gap: var(--size-lg);
 }

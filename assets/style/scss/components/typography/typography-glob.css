@@ -47,6 +47,13 @@
   position: absolute;
   top: 0px;
   width: var(--size-xl);
+  -webkit-transition: all 480ms ease-in-out;
+  transition: all 480ms ease-in-out;
+}
+
+.typ-subtitle--after::after {
+  left: 0;
+  background: var(--dev-gradient);
 }
 
 .typ-button,

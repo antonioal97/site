@@ -19,5 +19,13 @@ $component-name: 'typ-subtitle';
         position: absolute;
         top: 0px;
         width: var(--size-xl);
+        transition: all 480ms ease-in-out;
+    }
+
+    &--after{
+        &::after{
+            left: 0;
+            background: var(--dev-gradient);
+        }
     }
 }

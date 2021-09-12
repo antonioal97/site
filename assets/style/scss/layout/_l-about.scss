@@ -2,18 +2,17 @@ $component-name: 'l-about';
 
 .#{$component-name}{
     background: var(--dark-01);
-    position: relative;
-    padding-top: 30px;
-    z-index: 1;
-
+    padding: var(--size-lg) 0 var(--size-xl) 0;
+    
     article{
         display: flex;
+        gap: var(--size-lg);
 
         & > :nth-child(1){
             display: inherit;
             flex-wrap: wrap;
-            gap: 30px;
-            min-width: 60%;
+            gap: var(--size-md);
+            min-width: 56%;
         }
 
     }

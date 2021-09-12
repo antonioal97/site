@@ -104,6 +104,13 @@ a {
   position: absolute;
   top: 0px;
   width: var(--size-xl);
+  -webkit-transition: all 480ms ease-in-out;
+  transition: all 480ms ease-in-out;
+}
+
+.typ-subtitle--after::after {
+  left: 0;
+  background: var(--dev-gradient);
 }
 
 .typ-button,
@@ -259,10 +266,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
-  padding: 15px 30px;
+  gap: var(--size-lg);
+  padding: var(--size-md) var(--size-lg);
   text-decoration: none;
   position: relative;
+}
+
+.c-button {
+  text-align: center;
 }
 
 .skills-list {
@@ -309,7 +320,7 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  gap: 32px;
+  gap: var(--size-lg);
 }
 
 .c-card {
@@ -355,6 +366,37 @@ a {
   padding: var(--size-md);
 }
 
+.c-service-list {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--size-lg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-service-list .c-card .typ-body {
+  margin-bottom: 0;
+}
+
+.c-list {
+  list-style: none;
+}
+
+.c-list__item::before {
+  background-color: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: var(--size-sm);
+  margin-right: var(--size-md);
+  width: var(--size-sm);
+}
+
 .l-hero > :first-child {
   margin-bottom: var(--size-md);
 }
@@ -365,22 +407,47 @@ a {
 
 .l-about {
   background: var(--dark-01);
-  position: relative;
-  padding-top: 30px;
-  z-index: 1;
+  padding: var(--size-lg) 0 var(--size-xl) 0;
 }
 
 .l-about article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: var(--size-lg);
 }
 
 .l-about article > :nth-child(1) {
   display: inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
-  min-width: 60%;
+  gap: var(--size-md);
+  min-width: 56%;
+}
+
+.l-services {
+  text-align: center;
+  padding: var(--size-lg) 0 var(--size-xl) 0;
+}
+
+.l-services .typ-title::after {
+  margin: var(--size-md) auto var(--size-lg) auto;
+}
+
+.l-services .c-card {
+  text-align: left;
+}
+
+.l-services .c-cta {
+  margin-top: var(--size-lg);
+  width: 100%;
+}
+
+.l-services .c-cta .c-button {
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

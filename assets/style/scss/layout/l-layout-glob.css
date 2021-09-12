@@ -8,22 +8,47 @@
 
 .l-about {
   background: var(--dark-01);
-  position: relative;
-  padding-top: 30px;
-  z-index: 1;
+  padding: var(--size-lg) 0 var(--size-xl) 0;
 }
 
 .l-about article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: var(--size-lg);
 }
 
 .l-about article > :nth-child(1) {
   display: inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
-  min-width: 60%;
+  gap: var(--size-md);
+  min-width: 56%;
+}
+
+.l-services {
+  text-align: center;
+  padding: var(--size-lg) 0 var(--size-xl) 0;
+}
+
+.l-services .typ-title::after {
+  background-color: red;
+}
+
+.l-services .c-card {
+  text-align: left;
+}
+
+.l-services .c-cta {
+  margin-top: var(--size-lg);
+  width: 100%;
+}
+
+.l-services .c-cta .c-button {
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=l-layout-glob.css.map */

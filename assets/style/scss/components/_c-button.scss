@@ -5,8 +5,12 @@ $component-name: 'c-button';
     align-items: center;
     border-radius: $global-radius;
     display: flex;
-    gap: 32px;
-    padding: 15px 30px;
+    gap: var(--size-lg);
+    padding: var(--size-md) var(--size-lg);
     text-decoration: none;
     position: relative;
+}
+
+.#{$component-name}{
+    text-align: center;
 }
