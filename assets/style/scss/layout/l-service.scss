@@ -1,0 +1,27 @@
+$component-name: "l-services";
+
+.#{$component-name}{
+    text-align: center;
+    padding: var(--size-lg) 0 var(--size-xl) 0;
+
+    .typ-title{
+        &::after{
+            margin: var(--size-md) auto var(--size-lg) auto;
+        }
+    }
+
+    .c-card{
+        text-align: left;
+    }
+
+    .c-cta{
+        margin-top: var(--size-lg);
+        width: 100%;
+
+        .c-button{
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

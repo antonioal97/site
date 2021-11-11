@@ -1,0 +1,14 @@
+$component-name: 'typ-button';
+
+.#{$component-name},
+.#{$component-name}--as-link{
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: -0.02em;
+    line-height: 21px;
+}
+
+.#{$component-name}{
+    font-weight: 700;
+    text-transform: uppercase;
+}

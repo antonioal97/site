@@ -1,0 +1,9 @@
+$component-name: 'typ-body';
+
+.#{$component-name}{
+    font-size: var(--font-md);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin: var(--size-lg) 0 var(--size-xl) 0;
+}

@@ -1,0 +1,31 @@
+$component-name: 'typ-subtitle';
+
+.#{$component-name}{
+    color: var(--gray-03);
+    font-size: var(--font-lg);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 35px;
+    overflow-x: hidden;
+    padding-top: var(--size-md);
+    position: relative;
+    z-index: 1;
+    &::after{
+        background-color: currentColor;
+        border-radius: 4px;
+        content: "";
+        height: 4px;
+        left: -50px;
+        position: absolute;
+        top: 0px;
+        width: var(--size-xl);
+        transition: all 480ms ease-in-out;
+    }
+
+    &--after{
+        &::after{
+            left: 0;
+            background: var(--dev-gradient);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+$component-name: 'clr-dev';
+
+.#{$component-name}{
+    background: var(--dev-00);
+    color: var(--dev-03);
+    
+    &:hover{
+        background: var(--dev-default);
+    }
+
+    &:active{
+        background: var(--dev-03);
+        color: var(--dev-00);
+    }
+}
+
+.#{$component-name}--card{
+    &:hover{
+        border-image: var(--dev-gradient);
+    }
+}

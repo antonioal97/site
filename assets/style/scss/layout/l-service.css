@@ -1,0 +1,26 @@
+.l-services {
+  text-align: center;
+  padding: var(--size-lg) 0 var(--size-xl) 0;
+}
+
+.l-services .typ-title::after {
+  margin: var(--size-md) auto var(--size-lg) auto;
+}
+
+.l-services .c-card {
+  text-align: left;
+}
+
+.l-services .c-cta {
+  margin-top: var(--size-lg);
+  width: 100%;
+}
+
+.l-services .c-cta .c-button {
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=l-service.css.map */

@@ -1,0 +1,20 @@
+$component-name: 'clr-DMM';
+
+.#{$component-name}{
+    background: var(--DMM-00);
+    color: var(--DMM-03);
+    &:hover{
+        background: var(--DMM-default);
+    }
+    
+    &:active{
+        background: var(--DMM-03);
+        color: var(--DMM-00);
+    }
+}
+
+.#{$component-name}--card{
+    &:hover{
+        border-image: var(--DMM-gradient);
+    }
+}

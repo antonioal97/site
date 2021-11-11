@@ -1,0 +1,49 @@
+$component-name: 'c-menu';
+
+.#{$component-name}{
+
+    align-items: center;
+    display: flex;
+    font-size: $globalSize * 1.75;
+    justify-content: space-between;
+    &__left,
+    &__right{
+        align-items: inherit;
+        display: inherit;
+        gap: var(--size-lg);
+        justify-content: inherit;
+        list-style: none;
+    }
+    &__link{
+        color: var(--gray-02);
+        position: relative;
+        display: block;
+        padding: var(--size-lg) 0;
+        transition: all 350ms ease-in;
+        overflow-y: hidden;
+
+        &::before{
+            background: var(--primary-default);
+            bottom: 0;
+            content: "";
+            display: block;
+            height: ($globalSize / 4);
+            left: -100%;
+            position: absolute;
+            transition: all 350ms ease-in;
+
+            width: 100%;
+        }
+        
+        &:hover{
+            color: #fff;
+            &::before{
+                left: 0;
+            }
+        }
+    }
+}
+
+.#{$component-name}.typ-body{
+    margin: 0;
+}
