@@ -1,0 +1,17 @@
+.l-hero .c-nav{
+  margin-bottom: 40px;
+}
+
+.l-hero .c-font--heading{
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+.l-hero p{
+  color: var(--graysh);
+  margin-bottom: 24px;
+}
+
+.l-hero .c-button{
+  margin-bottom: 1rem;
+}
