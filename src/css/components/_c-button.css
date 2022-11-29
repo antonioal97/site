@@ -1,0 +1,17 @@
+.c-button{
+  border-radius: 4px;
+  display: inline-block;
+  padding: 12px 1rem;
+}
+
+.c-button--primary{
+  --_weight: 700;
+  background: var(--primary-05);
+  color: var(--dark);
+  text-transform: uppercase;
+  transition: filter  250ms ease-in;
+}
+
+.c-button--primary:hover{
+  filter: brightness(1.25);
+}

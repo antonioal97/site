@@ -1,0 +1,10 @@
+.c-font{
+  --_size: 1.125rem/ 24px;
+  --_weight: 400;
+  font: var(--_weight) var(--_size) var(--font);
+}
+
+.c-font--heading{
+  --_size: 3rem/ 56px;
+  --_weight: 700;
+}
