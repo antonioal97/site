@@ -1,5 +1,14 @@
+.l-hero .c-wrapper{
+  display: grid;
+  min-height: 100vh;
+}
+
 .l-hero .c-nav{
-  margin-bottom: 40px;
+  align-self: start;
+}
+
+.c-wrapper .headline{
+  align-self: end;
 }
 
 .l-hero .c-font--heading{
