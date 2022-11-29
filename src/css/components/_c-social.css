@@ -8,14 +8,3 @@
   display: block;
   color: var(--light);
 }
-
-.c-social > :nth-child(1n + 1){
-  border-bottom: 1px solid var(--graysh);
-  border-top: 1px solid var(--graysh);
-  border-left: 1px solid var(--graysh);
-
-}
-.c-social > :nth-child(even){
-  border-left: 1px solid var(--graysh);
-  border-right: 1px solid var(--graysh);
-}
