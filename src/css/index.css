@@ -1,0 +1,11 @@
+@import url('./_variables.css');
+
+/* Tags básicas do html e resets */
+@import url('./_base.css');
+
+/* Componentes */
+@import url('./components/index.css');
+
+/* Layout */
+@import url('./layout/index.css');
+
