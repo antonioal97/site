@@ -1,0 +1,10 @@
+.c-social a.c-button{
+  color: var(--light);
+  display: block;
+  margin-bottom: 0;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.c-social > li:not(:last-child){
+  border-bottom: 1px solid var(--graysh);
+}

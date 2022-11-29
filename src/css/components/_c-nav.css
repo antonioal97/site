@@ -1,0 +1,63 @@
+.c-nav{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__image{
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.profile__image img{
+  border-radius: 50%;
+}
+
+.profile__image::after{
+  background: var(--primary-05);
+  border-radius: 50%;
+  border: 4px solid var(--dark);
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  width: 14px;
+  z-index: 2;
+}
+
+/* Hamburguer itens */
+
+.c-hamburguer{
+  align-content: center;
+  color: var(--light);
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr, auto;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1rem;
+}
+.c-hamburguer span{
+  grid-column: 1;
+  grid-row: 1/ -1;
+}
+.c-hamburguer::after,
+.c-hamburguer::before{
+  background: currentColor;
+  content: "";
+  display: inline-block;
+  grid-column: 2;
+  height: 2px;
+}
+.c-hamburguer::before{
+  align-self: flex-end;
+  grid-row: 1;
+  width: 32px;
+}
+.c-hamburguer::after{
+  grid-row: 2;
+  width: 24px;
+}

@@ -11,25 +11,75 @@
       web
     </title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
   </head>
   <body>
-    <h1>
-      Sim, eu sou o <span>Antônio Alberto</span> e você está no meu site
-      pessoal!
-    </h1>
-    <p>
-      Está precisando de um site institucional para sua empresa? Entre em
-      contato
-    </p>
-    <ul>
-      <li><a href="https://www.facebook.com/antonioal97" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-      <li><a href="https://instagram.com/antonioal97" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/antonioal97/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-      <li><a href="https://github.com/antonioal97" target="_blank" rel="noopener noreferrer">Github</a></li>
-    </ul>
+    <header class="l-hero">
+      <div class="c-wrapper">
+        <nav class="c-nav">
+          <a href="/" class="profile__image">
+            <img
+              src="https://github.com/antonioal97.png"
+              alt="Antônio Alberto, desenvolvedor frontend e ui designer"
+            />
+          </a>
+          <span class="c-font c-hamburguer js-hamburguer">
+            <span>Menu</span>
+          </span>
+        </nav>
+        <div class="headline">
+          <h1 class="c-font c-font--heading">
+            Olá, eu sou o <span class="c-gradient">Antônio Alberto,</span> ajudo empresas a entrarem no mundo digital!
+          </h1>
+          <p class="c-font">
+            Está precisando de um site institucional para sua empresa? Entre em
+            contato
+          </p>
+          <a href="https://instagram.com/antonioal97" class=" c-font c-button c-button--primary" target="_blank" rel="noopener noreferrer">Contato</a>
+          <div class="c-sidebar">
+            <a class="c-font c-button js-close">Fechar</a>
+            <ul class="c-font c-social">
+              <li>
+                <a class="c-button"
+                  href="https://www.facebook.com/antonioal97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a class="c-button"
+                  href="https://instagram.com/antonioal97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a class="c-button"
+                  href="https://www.linkedin.com/in/antonioal97/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a class="c-button"
+                  href="https://github.com/antonioal97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="./src/js/sidebar.js"></script>
   </body>
 </html>

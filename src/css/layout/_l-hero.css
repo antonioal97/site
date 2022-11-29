@@ -1,0 +1,26 @@
+.l-hero .c-wrapper{
+  display: grid;
+  gap: 8rem;
+}
+
+.l-hero .c-nav{
+  align-self: start;
+}
+
+.c-wrapper .headline{
+  align-self: end;
+}
+
+.l-hero .c-font--heading{
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+.l-hero p{
+  color: var(--graysh);
+  margin-bottom: 24px;
+}
+
+.l-hero .c-button{
+  margin-bottom: 1rem;
+}
