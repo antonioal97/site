@@ -1,0 +1,40 @@
+@use '../02-tools/colors' as cor;
+@use '../02-tools/converter' as rem;
+
+.c-menu{
+  background: cor.graysh(900);
+  display: none;
+  padding: rem.converter(24, "to");
+  position: fixed;
+  right: -200%;
+  width: 330px;
+  
+  div{
+    align-content: center;
+    display: grid;
+    gap: rem.converter(12, "to");
+  }
+  
+  &__item{
+    background: cor.graysh(800);
+  }
+  &__item a{
+    display: block;
+  }
+
+  .js-close{
+    align-self: flex-end;
+    margin: rem.converter(48, "to") 0 rem.converter(40, "to") 0;
+    &:hover{
+      filter: contrast(2);
+    }
+  }
+
+  &.js-active{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+  }
+}

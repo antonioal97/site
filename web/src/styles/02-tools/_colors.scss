@@ -1,0 +1,7 @@
+@function brand($color-name){
+  @return var(--brand-#{$color-name})
+};
+
+@function graysh($color-name){
+  @return var(--graysh-#{$color-name})
+};

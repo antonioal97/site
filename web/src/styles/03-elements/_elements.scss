@@ -1,0 +1,64 @@
+body,h1, h2, h3, p, a, ul, li, img, button{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 414px;
+  padding: 24px;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+button{
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.navbar{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.user-image{
+  position: relative;
+  width: 48px;
+}
+
+.user-image img{
+  border-radius: 50%;
+}
+
+.user-image::after{
+  content: "";
+  $size: 12px;
+
+  background: var(--brand-500);
+  border-radius: 50%;
+  border: 2px solid var(--graysh-50);
+  bottom: 0;
+  display: block;
+  height: $size;
+  position: absolute;
+  right: 0;
+  width: $size;
+  z-index: 1;
+}
