@@ -1,8 +1,0 @@
-:root{
-  --font: 'Spline Sans', sans-serif;
-  --dark: hsl(150, 8%, 9%);
-  --graysh:hsl(144, 7%, 45%);
-  --light: hsl(144, 20%, 90%);
-  --primary-05: hsl(144, 90%, 62%);
-  --gradient: linear-gradient(to right, var(--primary-05), #F5EB94, #9758F5);
-}

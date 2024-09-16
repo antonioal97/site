@@ -1,9 +1,0 @@
-@use "sass:math";
-
-@function converter($value, $diretiva: false){
-  @if $diretiva == "to"{
-    @return #{math.div($value, 16)}rem;
-  } @else {
-    @return #{math.pow($value, 1)}rem;
-  };
-};
