@@ -15,6 +15,7 @@ export default function Home() {
             className="text-blue-500 inline-block relative before:block before:w-full before:bg-blue-500 before:h-[1px] before:absolute before:-bottom-[1px]"
             href="https://www.instagram.com/euantoniocorrea"
           >
+            {' '}
             @euantoniocorrea
           </a>
           .
