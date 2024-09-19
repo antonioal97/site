@@ -1,8 +1,10 @@
 export default function Home() {
   return (
-    <main className="p-10 h-[100vh] flex justify-center items-center w-full bg-gray-900">
-      <div className="p-8 border border-gray-700/90 rounded-lg bg-gray-700/25 max-w-xl">
-        <span className="rounded-full block mb-12 text-2xl bg-gray-700 border border-gray-500/75 w-fit p-4">🚧</span>
+    <main className="p-6 md:p-0 h-dvh w-full grid place-items-center bg-gray-900">
+      <div className="p-6 border border-gray-700/90 rounded-lg bg-gray-700/25 max-w-xl transition-shadow hover:shadow-[2px_8px_0px_0px_rgba(59,130,246),-2px_8px_0px_0px_rgba(59,130,246)] ">
+        <span className="size-14 rounded-full grid place-content-center mb-12 text-[1.5rem] bg-gray-700 border border-gray-500/75">
+          🚧
+        </span>
         <h1 className="font-bold text-lg md:text-2xl text-gray-300 mb-2 inline-block">
           Página em construção
         </h1>
@@ -13,19 +15,23 @@ export default function Home() {
             className="text-blue-500 inline-block relative before:block before:w-full before:bg-blue-500 before:h-[1px] before:absolute before:-bottom-[1px]"
             href="https://www.instagram.com/euantoniocorrea"
           >
+            {' '}
             @euantoniocorrea
           </a>
           .
         </p>
-        <div className="flex items-center justify-between">
-          <a href="https://api.whatsapp.com/send/?phone=5513998046083&text=Ol%C3%A1+Ant%C3%B4nio%2C+gostaria+de+um+or%C3%A7amento&type=phone_number&app_absent=0" className="px-5 py-3 bg-blue-500 text-blue-100 rounded-[4px] font-medium order-2 hover:bg-blue-500/90 cursor-pointer">
+        <div className="flex items-center justify-between gap-6 md:gap-0">
+          <a
+            href="https://api.whatsapp.com/send/?phone=5513998046083&text=Ol%C3%A1+Ant%C3%B4nio%2C+gostaria+de+um+or%C3%A7amento&type=phone_number&app_absent=0"
+            className="px-5 py-3 bg-blue-500 hover:bg-blue-500/90 text-blue-100 text-base md:text-lg rounded-md font-medium order-2 cursor-pointer"
+          >
             Quero um orçamento
           </a>
           <a
-            href="https://www.behance.net/correantonio"
-            className="text-gray-400 inline-block relative before:block before:w-full before:bg-gray-400 before:h-[1px] before:absolute before:-bottom-[1px]"
+            href="https://www.behance.net/euantoniocorrea"
+            className="text-gray-400 text-base md:text-lg inline-block relative before:block before:w-full before:bg-gray-400 before:h-[1px] before:absolute before:-bottom-[1px]"
           >
-            Outros links
+            Links
           </a>
         </div>
       </div>
